@@ -3,24 +3,19 @@
 {
   imports = [
     ./bash.nix
+    ./encryption.nix
     ./git.nix
     # ./gnome.nix
     ./neovim.nix
     ./wezterm.nix
-    
+
   ];
 
   programs = { home-manager.enable = true; };
 
-  programs.gpg = { enable = true; };
-  # programs.ssh = { startAgent = true; };
-  services.gpg-agent = { enable = true; };
-  services.gnome-keyring = {
-    enable = true;
-    components = [ "pkcs11" "secrets" "ssh" ];
-  };
 
-  
+
+
   # zsh = {
   #   enable = true;
   #   initExtraFirst = ''
