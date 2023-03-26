@@ -1,1 +1,2 @@
 imports/home-manager/configs/git.nix filter=git-crypt diff=git-crypt
+imports/home-manager/configs/git-crypt-test filter=git-crypt diff=git-crypt
