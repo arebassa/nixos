@@ -14,6 +14,9 @@ let
   #       virtualenv
   #     ]);
 
+  # Add the berkeley-mono package here
+  berkeley-mono = import ./berkeley-mono.nix { pkgs = pkgs; };
+
 in {
   home.packages = with pkgs; [
 
@@ -35,12 +38,22 @@ in {
     tailscale
 
     ### Terminal
+    oh-my-posh
+    fish
     wezterm
     htop
     ncspot
     espanso
     _1password
     age
+    fd
+    # grc
+
+    ### fish plugins
+    # fishPlugins.colored-man-pages
+    # fishPlugins.bass
+    # fishPlugins.async-prompt
+    # fishPlugins.grc
 
     ### code related
     vscode
@@ -56,6 +69,9 @@ in {
     # neovim
     # Called for above
     # default-python
+
+    # Add the berkeley-mono package to the list
+    berkeley-mono
   ];
 
 }
