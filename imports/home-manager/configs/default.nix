@@ -8,11 +8,12 @@
     # ./gnome.nix
     ./neovim.nix
     ./wezterm.nix
+    ./fish.nix
 
   ];
 
   programs = { home-manager.enable = true; };
-
+  fonts.fontconfig.enable = true;
 
 
 

@@ -85,6 +85,7 @@
     isNormalUser = true;
     description = "Dustin Krysak";
     extraGroups = [ "networkmanager" "wheel" ];
+    shell = "/etc/profiles/per-user/dustin/bin/fish";
     packages = with pkgs;
       [
         #  thunderbird
