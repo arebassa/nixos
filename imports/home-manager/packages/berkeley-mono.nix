@@ -1,6 +1,8 @@
-{ pkgs, ... }:
+# { pkgs, ... }:
+{ stdenv }:
 
-pkgs.stdenv.mkDerivation {
+# pkgs.stdenv.mkDerivation {
+stdenv.mkDerivation {
   name = "berkeley-mono";
   src = ./.;
 
