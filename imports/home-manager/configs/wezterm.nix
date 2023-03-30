@@ -3,7 +3,7 @@
   programs.wezterm = {
     enable = true;
     extraConfig = ''
-      local wezterm = require 'wezterm'
+      -- local wezterm = require 'wezterm'
 
       return {
 
@@ -12,9 +12,9 @@
 
         cursor_blink_rate = 800,
 
-        # color_scheme = "Dracula (Official)",
-        tab_bar_at_bottom = true,
-        use_fancy_tab_bar = true,
+        -- color_scheme = "Dracula (Official)",
+        tab_bar_at_bottom = false,
+        use_fancy_tab_bar = false,
         window_decorations = "RESIZE"
       }
     '';
