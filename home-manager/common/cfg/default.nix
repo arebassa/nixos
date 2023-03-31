@@ -4,11 +4,12 @@
   imports = [
     ./bash.nix
     ./encryption.nix
+    ./fish.nix
     ./git.nix
     # ./gnome.nix
     ./neovim.nix
+    ./vscode.nix
     ./wezterm.nix
-    ./fish.nix
 
   ];
 
