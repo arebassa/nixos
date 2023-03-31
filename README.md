@@ -20,7 +20,7 @@ This is a simple nixos setup leveraging flakes, and home-manager with the gnome 
 
 ## TODO <a name = "todo"></a>
 
-- [ ] finish `oh-my-posh` prompt theme
+- [x] finish `oh-my-posh` prompt theme
 - [ ] configure `vscode`
 - [ ] configure `espanso`
 - [ ] add all my terminal tools (ie - `exa`, `dust`, etc)
