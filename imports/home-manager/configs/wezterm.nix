@@ -1,4 +1,5 @@
 { pkgs, ... }:
+
 {
   programs.wezterm = {
     enable = true;
@@ -15,15 +16,8 @@
         use_fancy_tab_bar = true,
         window_decorations = "TITLE | RESIZE"
 
-        config.window_padding = {
-          left = 2,
-          right = 2,
-          top = 0,
-          bottom = 0,
       }
-}
 
-      }
     '';
 
   };
