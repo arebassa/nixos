@@ -25,7 +25,7 @@ This is a simple nixos setup leveraging flakes, and home-manager with the gnome 
 - [ ] configure `espanso`
 - [ ] add all my terminal tools (ie - `exa`, `dust`, etc)
 - [ ] add fish config
-- [ ] install goland
+- [ ] install golang
 - [ ] change window close shortcut to `ctrl-q`
 - [ ] figure out dconf skeleton
 - [ ] configure gnome settings via dconf
