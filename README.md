@@ -6,6 +6,7 @@ WIP - There are caveats that I need to document here. Currently for example, my 
 
 - [About](#about)
 - [Getting Started](#getting_started)
+- [TODO](#todo)
 
 ## About <a name = "about"></a>
 
@@ -13,8 +14,20 @@ This is a simple nixos setup leveraging flakes, and home-manager with the gnome 
 
 ## Getting Started <a name = "getting_started"></a>
 
-TODO - automate install and solve chicken/egg issues with `git`.
-
 - install nixos from the ISO with the Gnome Desktop
 - clone the repository with `mkdir -p ~/dev/ && cd ~/dev/ && git clone git@github.com:bashfulrobot/nixos && cd ~/dev/nixos`
 - Run `sudo nixos-rebuild switch --flake .#`
+
+## TODO <a name = "todo"></a>
+
+- [ ] finish `oh-my-posh` prompt theme
+- [ ] configure `vscode`
+- [ ] add fish config
+- [ ] install goland
+- [ ] change window close shortcut to `ctrl-q`
+- [ ] figure out dconf skeleton
+- [ ] configure gnome settings via dconf
+- [ ] automate install.
+- [ ] sanitize `configuration.nix` and `hardware-configuration.nix` for reuse.
+- [ ] start skeleton to add cfg for my tower
+- [ ] build tower cfg...
