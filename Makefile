@@ -46,7 +46,7 @@ install-config: ## install nix.conf
 	@echo "${YELLOW}install of nix.conf - ${GREEN} COMPETED. ${RESET}"
 switch: ## copy *.nix and rebuild switch
 	@echo "${BLUE}... copying *.nix / nixos rebuild switch ${RESET}"
-	@cd ~/dev/nixos; sudo nixos-rebuild switch --flake .#
+	@sudo nixos-rebuild switch --flake .#
 	@echo "${YELLOW}RUN nixos-rebuild switch - ${GREEN} COMPETED. ${RESET}"
 # remote-switch: ## run cfg from GH repo
 # 	@echo "${BLUE}... RUNNING: nixos-rebuild switch --flake github:bashfulrobot/nixos#dustin-krysak --no-write-lock-file ${RESET}"
