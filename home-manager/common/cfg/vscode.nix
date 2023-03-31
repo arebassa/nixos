@@ -2,7 +2,10 @@
   programs = {
     vscode = {
       enable = true;
-      extensions = [ EditorConfig.EditorConfig akmittal.hugofy ];
+      extensions = [ 
+        "EditorConfig.EditorConfig"
+        "akmittal.hugofy"
+        ];
     };
 
   };
