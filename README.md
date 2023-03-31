@@ -22,12 +22,16 @@ This is a simple nixos setup leveraging flakes, and home-manager with the gnome 
 
 - [ ] finish `oh-my-posh` prompt theme
 - [ ] configure `vscode`
+- [ ] configure `espanso`
+- [ ] add all my terminal tools (ie - `exa`, `dust`, etc)
 - [ ] add fish config
 - [ ] install goland
 - [ ] change window close shortcut to `ctrl-q`
 - [ ] figure out dconf skeleton
 - [ ] configure gnome settings via dconf
 - [ ] automate install.
+    - [ ] Look at disk partitions as code with [disko](https://github.com/nix-community/disko)
+        - [ ] time to rethink file systems
 - [ ] sanitize `configuration.nix` and `hardware-configuration.nix` for reuse.
 - [ ] start skeleton to add cfg for my tower
 - [ ] build tower cfg...
