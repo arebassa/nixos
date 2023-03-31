@@ -1,8 +1,7 @@
-imports/home-manager/configs/git.nix filter=git-crypt diff=git-crypt
-imports/home-manager/configs/git-crypt-test filter=git-crypt diff=git-crypt
-imports/home-manager/packages/fonts/BerkeleyMono-Bold.ttf filter=git-crypt diff=git-crypt
-imports/home-manager/packages/fonts/BerkeleyMono-BoldItalic.ttf filter=git-crypt diff=git-crypt
-imports/home-manager/packages/fonts/BerkeleyMono-Italic.ttf filter=git-crypt diff=git-crypt
-imports/home-manager/packages/fonts/BerkeleyMono-Regular.ttf filter=git-crypt diff=git-crypt
-imports/home-manager/packages/fonts/BerkeleyMonoVariable-Italic.ttf filter=git-crypt diff=git-crypt
-imports/home-manager/packages/fonts/BerkeleyMonoVariable-Regular.ttf filter=git-crypt diff=git-crypt
+home-manager/common/cfg/git.nix filter=git-crypt diff=git-crypt
+home-manager/common/pkg/fonts/BerkeleyMono-Bold.ttf filter=git-crypt diff=git-crypt
+home-manager/common/pkg/fonts/BerkeleyMono-BoldItalic.ttf filter=git-crypt diff=git-crypt
+home-manager/common/pkg/fonts/BerkeleyMono-Italic.ttf filter=git-crypt diff=git-crypt
+home-manager/common/pkg/fonts/BerkeleyMono-Regular.ttf filter=git-crypt diff=git-crypt
+home-manager/common/pkg/fonts/BerkeleyMonoVariable-Italic.ttf filter=git-crypt diff=git-crypt
+home-manager/common/pkg/fonts/BerkeleyMonoVariable-Regular.ttf filter=git-crypt diff=git-crypt
