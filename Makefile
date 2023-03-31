@@ -42,24 +42,16 @@ USER = dustin
 install-config: ## install nix.conf
 	@echo "${BLUE}... installing nix.conf ${RESET}"
 	@mkdir -p ~/.config/nix
-	@sudo mkdir -p /etc/nixos/imports/configuration_nix
-	@sudo mkdir -p /etc/nixos/imports/home-manager/packages
-	@sudo mkdir -p /etc/nixos/imports/home-manager/configs
+	@cp home/.config/nix/nix.config ~/.config/nix/
 	@echo "${YELLOW}install of nix.conf - ${GREEN} COMPETED. ${RESET}"
 switch: ## copy *.nix and rebuild switch
 	@echo "${BLUE}... copying *.nix / nixos rebuild switch ${RESET}"
-	@sudo cp flake.nix /etc/nixos/
-	@sudo cp home.nix /etc/nixos/
-	@sudo cp configuration.nix /etc/nixos/
-	@sudo cp hardware-configuration.nix /etc/nixos/
-	@sudo rsync -av --delete imports/ /etc/nixos/imports/
-	@echo "${YELLOW}file copy - ${GREEN} COMPETED. ${RESET}"
-	@sudo nixos-rebuild switch #--show-trace
+	@cd ~/dev/nixos; sudo nixos-rebuild switch --flake .#
 	@echo "${YELLOW}RUN nixos-rebuild switch - ${GREEN} COMPETED. ${RESET}"
-remote-switch: ## run cfg from GH repo
-	@echo "${BLUE}... RUNNING: nixos-rebuild switch --flake github:bashfulrobot/nixos#dustin-krysak --no-write-lock-file ${RESET}"
-	@sudo nixos-rebuild switch --flake github:bashfulrobot/nixos#dustin-krysak --no-write-lock-file
-	@echo "${YELLOW}remote nixos-rebuild switch- ${GREEN} COMPETED. ${RESET}"
+# remote-switch: ## run cfg from GH repo
+# 	@echo "${BLUE}... RUNNING: nixos-rebuild switch --flake github:bashfulrobot/nixos#dustin-krysak --no-write-lock-file ${RESET}"
+# 	@sudo nixos-rebuild switch --flake github:bashfulrobot/nixos#dustin-krysak --no-write-lock-file
+# 	@echo "${YELLOW}remote nixos-rebuild switch- ${GREEN} COMPETED. ${RESET}"
 help:
 	@echo ""
 	@echo "    ${BLACK}:: ${RED}Makefile Help${RESET} ${BLACK}::${RESET}"
