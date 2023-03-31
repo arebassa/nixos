@@ -7,8 +7,8 @@
 {
   imports = [ # Include the results of the hardware scan.
     ./hardware-configuration.nix
-    # 1password does not have a home-manager module
-    ./imports/configuration_nix/default.nix
+    # import other system level nix cfg
+    ../common/default.nix
   ];
 
   # Bootloader.

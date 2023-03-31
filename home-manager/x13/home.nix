@@ -8,8 +8,17 @@
   home.username = "dustin";
   home.homeDirectory = "/home/dustin";
 
+  # Enable the nix-command and flakes experimental features
+  nix = {
+    package = pkgs.nixUnstable;
+    extraOptions = ''
+      experimental-features = nix-command flakes
+    '';
+  };
+
   # Packages and settings installed to the user profile.
-  imports = [ ./imports/home-manager/packages ./imports/home-manager/configs ];
+  imports = [ ../common/pkg ../common/cfg ];
+
 
   # git configurations
   # programs.git = gitConfig.programs.git;

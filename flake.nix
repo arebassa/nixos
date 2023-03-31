@@ -19,13 +19,13 @@
       dustin-krysak = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./configuration.nix
+          ./hosts/x13/configuration.nix
           nixos-hardware.nixosModules.lenovo-thinkpad-x13-yoga
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.dustin = import ./home.nix;
+            home-manager.users.dustin = import ./home-manager/x13/home.nix;
 
             # Allow unfree packages
             nixpkgs.config.allowUnfree = true;

@@ -49,6 +49,7 @@ in {
     _1password
     age
     fd
+    tree
     # grc
 
     ### fish plugins
