@@ -1,5 +1,7 @@
 # nixos config
 
+WIP - There are caveats that I need to document here. Currently for example, my `configuration.nix` is almost stardard from the ISO. It needs to be abstracted out, and have the specifics of the system dealt with. Such as disk id's, etc.
+
 ## Table of Contents
 
 - [About](#about)
