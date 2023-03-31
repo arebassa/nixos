@@ -39,7 +39,7 @@ POUND = \#
 # TOWER-PLAYBOOK = playbooks/tower.yaml
 USER = dustin
 
-install-config: ## install nix.conf
+install: ## install nix.conf
 	@echo "${BLUE}... installing nix.conf ${RESET}"
 	@mkdir -p ~/.config/nix
 	@cp home/.config/nix/nix.config ~/.config/nix/
