@@ -52,7 +52,7 @@ switch: ## copy *.nix and rebuild switch
 # 	@echo "${BLUE}... RUNNING: nixos-rebuild switch --flake github:bashfulrobot/nixos#dustin-krysak --no-write-lock-file ${RESET}"
 # 	@sudo nixos-rebuild switch --flake github:bashfulrobot/nixos#dustin-krysak --no-write-lock-file
 # 	@echo "${YELLOW}remote nixos-rebuild switch- ${GREEN} COMPETED. ${RESET}"
-garbage-collect ## garbage collect uninstalled app files
+garbage-collect: ## garbage collect uninstalled app files
 	@echo "${BLUE}... running garbage collection ${RESET}"
 	@sudo nix-collect-garbage -d
 	@echo "${YELLOW}garbage collection - ${GREEN} COMPETED. ${RESET}"
