@@ -16,7 +16,7 @@ let
 
   # Add the berkeley-mono package here
   # berkeley-mono = import ./berkeley-mono.nix { pkgs = pkgs; };
-  berkeley-mono = pkgs.callPackage ./berkeley-mono.nix {};
+  berkeley-mono = pkgs.callPackage ./berkeley-mono.nix { };
 
 in {
   home.packages = with pkgs; [
@@ -60,6 +60,7 @@ in {
 
     ### code related
     vscode
+    #    vscode.fhs
     shadowenv
     difftastic
     nixfmt
