@@ -59,7 +59,7 @@ in {
     # fishPlugins.grc
 
     ### code related
-    vscode
+    #    vscode
     #    vscode.fhs
     shadowenv
     difftastic
