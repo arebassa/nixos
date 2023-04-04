@@ -7,6 +7,7 @@
     ./fish.nix
     ./git.nix
     # ./gnome.nix
+    ./ncspot.nix
     ./neovim.nix
     # ./vscode.nix
     ./wezterm.nix

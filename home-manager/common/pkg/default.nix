@@ -44,7 +44,7 @@ in {
     alacritty
     wezterm
     htop
-    ncspot
+    #ncspot
     espanso
     _1password
     age
