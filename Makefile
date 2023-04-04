@@ -39,6 +39,10 @@ POUND = \#
 # TOWER-PLAYBOOK = playbooks/tower.yaml
 USER = dustin
 
+first-run: ## used on a brand new install one time
+	@echo "${BLUE}... running first-run setup ${RESET}"
+	@NIX_CONFIG = "experimental-features = nix-command flakes";
+	@echo "${YELLOW}first-run - ${GREEN} COMPETED. ${RESET}"
 install: ## install nix.conf
 	@echo "${BLUE}... installing nix.conf ${RESET}"
 	@mkdir -p ~/.config/nix

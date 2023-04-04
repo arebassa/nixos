@@ -59,8 +59,6 @@ in {
     # fishPlugins.grc
 
     ### code related
-    #    vscode
-    #    vscode.fhs
     shadowenv
     difftastic
     nixfmt

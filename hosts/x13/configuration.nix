@@ -100,19 +100,22 @@
   systemd.services."getty@tty1".enable = false;
   systemd.services."autovt@tty1".enable = false;
 
-
+  # Enable flakes and nix command
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  environment.systemPackages = with pkgs; [
-    #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    wget
-    bluez
-    dconf
-  ];
+  ##### moved to system-packages.nix
+  # environment.systemPackages = with pkgs; [
+  #   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+  #   wget
+  #   bluez
+  #   dconf
+  #   # vscode-fhs
+  # ];
 
   # Enable dconf
   programs.dconf.enable = true;

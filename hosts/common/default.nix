@@ -1,6 +1,5 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ ./1password.nix ];
+  imports = [ ./1password.nix ./system-packages.nix ];
 }
-

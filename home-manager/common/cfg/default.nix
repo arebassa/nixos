@@ -8,7 +8,7 @@
     ./git.nix
     # ./gnome.nix
     ./neovim.nix
-    ./vscode.nix
+    # ./vscode.nix
     ./wezterm.nix
 
   ];
