@@ -204,9 +204,14 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell" = {
+      disabled-extensions = [];
       enabled-extensions = [ "space-bar@luchrioh" ];
       last-selected-power-profile = "power-saver";
       welcome-dialog-last-shown-version = "43.2";
+    };
+
+    "org/gnome/shell/extensions/space-bar/shortcuts" = {
+      enable-move-to-workspace-shortcuts = true;
     };
 
     "org/gnome/shell/world-clocks" = {
