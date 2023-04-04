@@ -45,7 +45,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/control-center" = {
-      last-panel = "power";
+      last-panel = "keyboard";
       window-state = mkTuple [ 980 640 ];
     };
 
@@ -161,7 +161,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/wm/keybindings" = {
-      close = "['<Super>q']";
+      close = [ "<Super>q" ];
     };
 
     "org/gnome/epiphany" = {
@@ -205,9 +205,29 @@ with lib.hm.gvariant;
 
     "org/gnome/shell" = {
       disabled-extensions = [];
-      enabled-extensions = [ "space-bar@luchrioh" ];
+      enabled-extensions = [ "space-bar@luchrioh" "caffeine@patapon.info" "grand-theft-focus@zalckos.github.com" "gTile@vibou" "rounded-window-corners@yilozt" "thinkpad-battery-threshold@marcosdalvarez.org" "user-theme@gnome-shell-extensions.gcampax.github.com" ];
       last-selected-power-profile = "power-saver";
       welcome-dialog-last-shown-version = "43.2";
+    };
+
+    "org/gnome/shell/extensions/caffeine" = {
+      indicator-position-max = 2;
+    };
+
+    "org/gnome/shell/extensions/gtile" = {
+      auto-close-keyboard-shortcut = true;
+      global-auto-tiling = false;
+      theme = "Default";
+      window-margin = 4;
+      window-margin-fullscreen-enabled = true;
+    };
+
+    "org/gnome/shell/extensions/rounded-window-corners" = {
+      custom-rounded-corner-settings = "@a{sv} {}";
+      enable-preferences-entry = true;
+      global-rounded-corner-settings = "{'padding': <{'left': <uint32 9>, 'right': <uint32 2>, 'top': <uint32 2>, 'bottom': <uint32 2>}>, 'keep_rounded_corners': <{'maximized': <false>, 'fullscreen': <false>}>, 'border_radius': <uint32 16>, 'smoothing': <uint32 0>, 'enabled': <true>}";
+      settings-version = mkUint32 5;
+      skip-libadwaita-app = false;
     };
 
     "org/gnome/shell/extensions/space-bar/shortcuts" = {
