@@ -204,6 +204,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell" = {
+      enabled-extensions = [ "space-bar@luchrioh" ];
       last-selected-power-profile = "power-saver";
       welcome-dialog-last-shown-version = "43.2";
     };
