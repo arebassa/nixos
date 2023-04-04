@@ -127,6 +127,10 @@ with lib.hm.gvariant;
       application-id = "org.gnome.Settings.desktop";
     };
 
+    "org/gnome/desktop/notifications/application/org-wezfurlong-wezterm" = {
+      application-id = "org.wezfurlong.wezterm.desktop";
+    };
+
     "org/gnome/desktop/notifications/application/slack" = {
       application-id = "slack.desktop";
     };
@@ -169,8 +173,8 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/epiphany/state" = {
-      is-maximized = true;
-      window-size = mkTuple [ 1024 650 ];
+      is-maximized = false;
+      window-size = mkTuple [ 936 1136 ];
     };
 
     "org/gnome/evolution-data-server" = {
@@ -180,7 +184,7 @@ with lib.hm.gvariant;
     "org/gnome/mutter" = {
       attach-modal-dialogs = true;
       dynamic-workspaces = true;
-      edge-tiling = true;
+      edge-tiling = false;
       focus-change-on-pointer-rest = true;
       workspaces-only-on-primary = true;
     };
@@ -205,7 +209,7 @@ with lib.hm.gvariant;
 
     "org/gnome/shell" = {
       disabled-extensions = [];
-      enabled-extensions = [ "space-bar@luchrioh" "caffeine@patapon.info" "grand-theft-focus@zalckos.github.com" "gTile@vibou" "rounded-window-corners@yilozt" "thinkpad-battery-threshold@marcosdalvarez.org" "user-theme@gnome-shell-extensions.gcampax.github.com" ];
+      enabled-extensions = [ "space-bar@luchrioh" "caffeine@patapon.info" "grand-theft-focus@zalckos.github.com" "gTile@vibou" "rounded-window-corners@yilozt" "thinkpad-battery-threshold@marcosdalvarez.org" "user-theme@gnome-shell-extensions.gcampax.github.com" "pop-shell@system76.com" ];
       last-selected-power-profile = "power-saver";
       welcome-dialog-last-shown-version = "43.2";
     };
@@ -222,6 +226,14 @@ with lib.hm.gvariant;
       window-margin-fullscreen-enabled = true;
     };
 
+    "org/gnome/shell/extensions/pop-shell" = {
+      fullscreen-launcher = true;
+      gap-inner = mkUint32 4;
+      gap-outer = mkUint32 4;
+      smart-gaps = true;
+      tile-by-default = true;
+    };
+
     "org/gnome/shell/extensions/rounded-window-corners" = {
       custom-rounded-corner-settings = "@a{sv} {}";
       enable-preferences-entry = true;
@@ -232,6 +244,11 @@ with lib.hm.gvariant;
 
     "org/gnome/shell/extensions/space-bar/shortcuts" = {
       enable-move-to-workspace-shortcuts = true;
+    };
+
+    "org/gnome/shell/extensions/thinkpad-battery-threshold" = {
+      debug-mode = true;
+      indicator-mode = "ACTIVE";
     };
 
     "org/gnome/shell/world-clocks" = {

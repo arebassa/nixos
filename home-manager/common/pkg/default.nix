@@ -31,44 +31,22 @@ in {
     dconf
 
     ### Communication
+    mailspring
     element-desktop
     zoom-us
     slack
 
-    ### Networking
-    tailscale
-
     ### Terminal
-    oh-my-posh
-    fish
-    alacritty
-    wezterm
-    htop
     #ncspot
     espanso
     _1password
-    age
-    fd
-    tree
-    # grc
-
-    ### fish plugins
-    # fishPlugins.colored-man-pages
-    # fishPlugins.bass
-    # fishPlugins.async-prompt
-    # fishPlugins.grc
 
     ### code related
     shadowenv
     difftastic
     nixfmt
-    git
-    gnumake
     doppler
-    git-crypt
-    gnupg
     gh
-    # neovim
     # Called for above
     # default-python
 
