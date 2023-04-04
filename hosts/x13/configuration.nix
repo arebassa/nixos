@@ -7,8 +7,10 @@
 {
   imports = [ # Include the results of the hardware scan.
     ./hardware-configuration.nix
-    # import other system level nix cfg
+    # import general system level nix cfg
     ../common/default.nix
+    # import system specific system level nix cfg
+    ./system-packages.nix
   ];
 
   # Bootloader.
