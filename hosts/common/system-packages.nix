@@ -19,6 +19,7 @@
     gnumake
     git-crypt
     gnupg
+    cod
 
   ];
   # ...
