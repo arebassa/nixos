@@ -4,6 +4,7 @@
     wget
     bluez
     dconf
+    dconf2nix
     vscode-fhs
   ];
   # ...
