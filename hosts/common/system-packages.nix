@@ -19,7 +19,7 @@
     gnumake
     git-crypt
     gnupg
-
+    fzf
   ];
   # ...
 }
