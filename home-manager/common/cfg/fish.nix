@@ -4,7 +4,9 @@ let homeDir = builtins.getEnv "HOME";
 in {
   programs.fish = {
     enable = true;
-
+    shellInit = ''
+      set -x NIXOS_OZONE_WL 1
+    '';
     # # fish plugins
     # plugins = [{
     #   name = "fish-ssh-agent";
