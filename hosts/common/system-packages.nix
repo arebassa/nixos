@@ -23,4 +23,6 @@
     fzf
   ];
   # ...
+  # Needed for vscode
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
 }
