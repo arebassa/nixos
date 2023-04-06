@@ -46,7 +46,7 @@ with lib.hm.gvariant;
 
     "org/gnome/control-center" = {
       last-panel = "keyboard";
-      window-state = mkTuple [ 980 640 ];
+      window-state = mkTuple [ 1920 1168 ];
     };
 
     "org/gnome/desktop/app-folders" = {
@@ -82,9 +82,13 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
-      font-antialiasing = "grayscale";
-      font-hinting = "slight";
+      document-font-name = "Berkeley Mono 11";
+      enable-hot-corners = false;
+      font-antialiasing = "rgba";
+      font-hinting = "full";
+      font-name = "Berkeley Mono 11";
       gtk-theme = "Adwaita-dark";
+      monospace-font-name = "Berkeley Mono 10";
     };
 
     "org/gnome/desktop/notifications" = {
@@ -144,6 +148,13 @@ with lib.hm.gvariant;
       two-finger-scrolling-enabled = true;
     };
 
+    "org/gnome/desktop/privacy" = {
+      old-files-age = mkUint32 14;
+      recent-files-max-age = 30;
+      remove-old-temp-files = true;
+      remove-old-trash-files = true;
+    };
+
     "org/gnome/desktop/screensaver" = {
       color-shading-type = "solid";
       picture-options = "zoom";
@@ -162,10 +173,16 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/sound" = {
       allow-volume-above-100-percent = true;
+      event-sounds = true;
+      theme-name = "__custom";
     };
 
     "org/gnome/desktop/wm/keybindings" = {
       close = [ "<Super>q" ];
+    };
+
+    "org/gnome/desktop/wm/preferences" = {
+      titlebar-font = "Berkeley Mono Bold 11";
     };
 
     "org/gnome/epiphany" = {
@@ -200,7 +217,17 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/settings-daemon/plugins/color" = {
-      night-light-enabled = false;
+      night-light-enabled = true;
+    };
+
+    "org/gnome/settings-daemon/plugins/media-keys" = {
+      custom-keybindings = [ "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/" ];
+    };
+
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
+      binding = "<Super>t";
+      command = "/etc/profiles/per-user/dustin/bin/wezterm";
+      name = "Open Wez";
     };
 
     "org/gnome/settings-daemon/plugins/power" = {
@@ -208,14 +235,14 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell" = {
-      disabled-extensions = [];
-      enabled-extensions = [ "space-bar@luchrioh" "caffeine@patapon.info" "grand-theft-focus@zalckos.github.com" "gTile@vibou" "rounded-window-corners@yilozt" "thinkpad-battery-threshold@marcosdalvarez.org" "user-theme@gnome-shell-extensions.gcampax.github.com" "pop-shell@system76.com" ];
+      disabled-extensions = [ "space-bar@luchrioh" ];
+      enabled-extensions = [ "caffeine@patapon.info" "grand-theft-focus@zalckos.github.com" "gTile@vibou" "rounded-window-corners@yilozt" "thinkpad-battery-threshold@marcosdalvarez.org" "user-theme@gnome-shell-extensions.gcampax.github.com" "pop-shell@system76.com" ];
       last-selected-power-profile = "power-saver";
       welcome-dialog-last-shown-version = "43.2";
     };
 
     "org/gnome/shell/extensions/caffeine" = {
-      indicator-position-max = 2;
+      indicator-position-max = 1;
     };
 
     "org/gnome/shell/extensions/gtile" = {
