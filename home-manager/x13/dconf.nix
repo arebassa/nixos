@@ -179,6 +179,7 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/wm/keybindings" = {
       close = [ "<Super>q" ];
+      toggle-maximized = [ "<Super>m" ];
     };
 
     "org/gnome/desktop/wm/preferences" = {
@@ -191,7 +192,7 @@ with lib.hm.gvariant;
 
     "org/gnome/epiphany/state" = {
       is-maximized = false;
-      window-size = mkTuple [ 936 1136 ];
+      window-size = mkTuple [ 936 560 ];
     };
 
     "org/gnome/evolution-data-server" = {
@@ -278,6 +279,10 @@ with lib.hm.gvariant;
       indicator-mode = "ACTIVE";
     };
 
+    "org/gnome/shell/keybindings" = {
+      toggle-message-tray = [];
+    };
+
     "org/gnome/shell/world-clocks" = {
       locations = "@av []";
     };
@@ -306,12 +311,12 @@ with lib.hm.gvariant;
       show-hidden = false;
       show-size-column = true;
       show-type-column = true;
-      sidebar-width = 157;
+      sidebar-width = 189;
       sort-column = "name";
       sort-directories-first = false;
       sort-order = "ascending";
       type-format = "category";
-      window-position = mkTuple [ 0 32 ];
+      window-position = mkTuple [ 358 141 ];
       window-size = mkTuple [ 1203 902 ];
     };
 
