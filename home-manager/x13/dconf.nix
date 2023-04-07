@@ -45,8 +45,8 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/control-center" = {
-      last-panel = "keyboard";
-      window-state = mkTuple [ 1920 1168 ];
+      last-panel = "mouse";
+      window-state = mkTuple [ 936 560 ];
     };
 
     "org/gnome/desktop/app-folders" = {
@@ -144,6 +144,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/peripherals/touchpad" = {
+      natural-scroll = false;
       tap-to-click = true;
       two-finger-scrolling-enabled = true;
     };
