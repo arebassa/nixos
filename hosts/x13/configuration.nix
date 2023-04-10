@@ -30,21 +30,6 @@
   networking.hostName = "dustin-krysak"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-  # Use NextDNS
-  networking.nameservers =
-    [ "45.90.28.0#81aec9.dns.nextdns.io" "45.90.30.0#81aec9.dns.nextdns.io" ];
-
-  #  services.resolved = {
-  #    enable = true;
-  #    dnssec = "true";
-  #    domains = [ "~." ];
-  #    fallbackDns =
-  #      [ "45.90.28.0#81aec9.dns.nextdns.io" "45.90.30.0#81aec9.dns.nextdns.io" ];
-  #    extraConfig = ''
-  #      DNSOverTLS=yes
-  #    '';
-  #  };
-
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
