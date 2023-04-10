@@ -25,6 +25,7 @@ in {
     _1password-gui
     google-chrome
     brave
+    microsoft-edge
 
     ### Gnome
     gnome.gnome-tweaks
