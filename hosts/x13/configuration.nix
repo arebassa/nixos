@@ -30,10 +30,22 @@
   networking.hostName = "dustin-krysak"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
+  # NextDNS
+  # NOTE - need to run `sudo nextdns activate` once
   services.nextdns = {
     enable = true;
     arguments = [ "-profile" "81aec9" "-cache-size" "10MB" ];
   };
+
+  # Tweak to account for the above
+  systemd.services.nextdns-activate = {
+    script = ''
+      /run/current-system/sw/bin/nextdns activate
+    '';
+    after = [ "nextdns.service" ];
+    wantedBy = [ "multi-user.target" ];
+  };
+
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
