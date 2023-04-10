@@ -24,6 +24,7 @@ in {
     ### Desktop
     _1password-gui
     google-chrome
+    brave
 
     ### Gnome
     gnome.gnome-tweaks
