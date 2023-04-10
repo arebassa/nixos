@@ -32,7 +32,7 @@
 
   services.nextdns = {
     enable = true;
-    arguments = [ "-config" "81aec9" "-cache-size" "10MB" ];
+    arguments = [ "-profile" "81aec9" "-cache-size" "10MB" ];
   };
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
