@@ -36,8 +36,8 @@
 
   services.resolved = {
     enable = true;
-    #dnssec = "true";
-    #domains = [ "~." ];
+    dnssec = "true";
+    domains = [ "~." ];
     fallbackDns =
       [ "45.90.28.0#81aec9.dns.nextdns.io" "45.90.30.0#81aec9.dns.nextdns.io" ];
     extraConfig = ''
