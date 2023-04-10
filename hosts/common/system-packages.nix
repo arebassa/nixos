@@ -21,6 +21,7 @@
     git-crypt
     gnupg
     fzf
+		kopia
   ];
   # ...
 }
