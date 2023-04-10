@@ -31,7 +31,7 @@
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Use NextDNS
-  networking.nameservers = [ "45.90.28.101" "45.90.30.101"]
+  networking.nameservers = [ "45.90.28.101" "45.90.30.101" ];
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
