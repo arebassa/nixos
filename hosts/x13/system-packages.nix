@@ -9,6 +9,7 @@
     pkgs.gnomeExtensions.pop-shell
     gnomeExtensions.caffeine
     gnomeExtensions.user-themes
+    nextdns
 
   ];
   # ...
