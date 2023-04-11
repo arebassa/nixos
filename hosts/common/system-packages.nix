@@ -22,6 +22,8 @@
     gnupg
     fzf
     kopia
+    restic
+    autorestic
   ];
   # ...
 }
