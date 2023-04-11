@@ -9,6 +9,7 @@
     # ./gnome.nix
     ./ncspot.nix
     ./neovim.nix
+    ./ssh.nix
     # ./vscode.nix
     ./wezterm.nix
 
