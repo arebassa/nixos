@@ -5,13 +5,14 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ # Include the results of the hardware scan.
-    ./hardware-configuration.nix
-    # import general system level nix cfg
-    ../common/default.nix
-    # import system specific system level nix cfg
-    ./system-packages.nix
-  ];
+  imports =
+    [ # Include the results of the hardware scan.
+      ./hardware-configuration.nix
+      # import general system level nix cfg
+      ../common/default.nix
+      # import system specific system level nix cfg
+      ./system-packages.nix
+    ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -19,17 +20,17 @@
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
 
   # Setup keyfile
-  boot.initrd.secrets = { "/crypto_keyfile.bin" = null; };
+  boot.initrd.secrets = {
+    "/crypto_keyfile.bin" = null;
+  };
 
   # Enable swap on luks
-  boot.initrd.luks.devices."luks-202b271b-2113-4266-85ef-06867545e37b".device =
-    "/dev/disk/by-uuid/202b271b-2113-4266-85ef-06867545e37b";
-  boot.initrd.luks.devices."luks-202b271b-2113-4266-85ef-06867545e37b".keyFile =
-    "/crypto_keyfile.bin";
+  boot.initrd.luks.devices."luks-7b945ed6-92e6-4762-a6e3-9ce164c61a40".device = "/dev/disk/by-uuid/7b945ed6-92e6-4762-a6e3-9ce164c61a40";
+  boot.initrd.luks.devices."luks-7b945ed6-92e6-4762-a6e3-9ce164c61a40".keyFile = "/crypto_keyfile.bin";
 
   networking.hostName = "dustin-krysak"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
+  
   # NextDNS
   # NOTE - need to run `sudo nextdns activate` once
   services.nextdns = {
@@ -94,7 +95,7 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
-
+  
   # Enable Bluetooth
   hardware.bluetooth.enable = true;
 
@@ -104,33 +105,30 @@
     description = "Dustin Krysak";
     extraGroups = [ "networkmanager" "wheel" ];
     shell = "/etc/profiles/per-user/dustin/bin/fish";
-    packages = with pkgs;
-      [
-        #  thunderbird
-      ];
+    packages = with pkgs; [
+    #  thunderbird
+    ];
   };
-
-  # Enable automatic login for the user.
-  services.xserver.displayManager.autoLogin.enable = true;
-  services.xserver.displayManager.autoLogin.user = "dustin";
-
-  # Workaround for GNOME autologin: https://github.com/NixOS/nixpkgs/issues/103746#issuecomment-945091229
-  systemd.services."getty@tty1".enable = false;
-  systemd.services."autovt@tty1".enable = false;
-
-  # Enable flakes and nix command
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
+  
   # Enable dconf
   programs.dconf.enable = true;
+  
+  # Enable Nix/Flakes
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  # List packages installed in system profile. To search, run:
+  # $ nix search wget
+  environment.systemPackages = with pkgs; [
+  #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+  #  wget
+  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
-  # TODO - DK, look at thi for home-manager
   # programs.gnupg.agent = {
   #   enable = true;
   #   enableSSHSupport = true;
@@ -140,8 +138,8 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
-
-  # Enable Tailscale service
+  
+  # Enable Tailscale
   services.tailscale.enable = true;
 
   # Open ports in the firewall.
