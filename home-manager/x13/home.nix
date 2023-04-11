@@ -9,7 +9,7 @@
   home.homeDirectory = "/home/dustin";
 
   # Packages and settings installed to the user profile.
-  imports = [ ../common/pkg ../common/cfg ./dconf.nix ];
+  imports = [ ../common/pkg ../common/cfg ./dconf.nix ./kopia.nix ];
 
 
   # git configurations

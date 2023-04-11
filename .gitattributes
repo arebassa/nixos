@@ -5,3 +5,4 @@ home-manager/common/pkg/fonts/BerkeleyMono-Italic.ttf filter=git-crypt diff=git-
 home-manager/common/pkg/fonts/BerkeleyMono-Regular.ttf filter=git-crypt diff=git-crypt
 home-manager/common/pkg/fonts/BerkeleyMonoVariable-Italic.ttf filter=git-crypt diff=git-crypt
 home-manager/common/pkg/fonts/BerkeleyMonoVariable-Regular.ttf filter=git-crypt diff=git-crypt
+home-manager/x13/kopia.nix filter=git-crypt diff=git-crypt
