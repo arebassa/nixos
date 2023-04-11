@@ -4,29 +4,30 @@
 { config, lib, pkgs, modulesPath, ... }:
 
 {
-  imports = [ (modulesPath + "/installer/scan/not-detected.nix") ];
+  imports =
+    [ (modulesPath + "/installer/scan/not-detected.nix")
+    ];
 
-  boot.initrd.availableKernelModules =
-    [ "xhci_pci" "thunderbolt" "nvme" "usb_storage" "sd_mod" ];
+  boot.initrd.availableKernelModules = [ "xhci_pci" "thunderbolt" "nvme" "usb_storage" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
-  fileSystems."/" = {
-    device = "/dev/disk/by-uuid/dd02bc2a-eaf3-4b9c-835d-81a4bf4342aa";
-    fsType = "ext4";
-  };
+  fileSystems."/" =
+    { device = "/dev/disk/by-uuid/4409b429-43ed-49f3-b38e-f4f9a3b101c0";
+      fsType = "ext4";
+    };
 
-  boot.initrd.luks.devices."luks-b6120798-6657-4e6a-886b-bedf2497ee92".device =
-    "/dev/disk/by-uuid/b6120798-6657-4e6a-886b-bedf2497ee92";
+  boot.initrd.luks.devices."luks-fa5942be-dc33-4263-a136-e731d13791b8".device = "/dev/disk/by-uuid/fa5942be-dc33-4263-a136-e731d13791b8";
 
-  fileSystems."/boot/efi" = {
-    device = "/dev/disk/by-uuid/EC41-C1CB";
-    fsType = "vfat";
-  };
+  fileSystems."/boot/efi" =
+    { device = "/dev/disk/by-uuid/EA34-21D7";
+      fsType = "vfat";
+    };
 
   swapDevices =
-    [{ device = "/dev/disk/by-uuid/797a0f49-79a2-4606-a43a-0bde9ce6bf39"; }];
+    [ { device = "/dev/disk/by-uuid/b30a9b6f-94a0-4b57-b610-b812a5bab8ab"; }
+    ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
@@ -37,6 +38,5 @@
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
-  hardware.cpu.intel.updateMicrocode =
-    lib.mkDefault config.hardware.enableRedistributableFirmware;
+  hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
 }
