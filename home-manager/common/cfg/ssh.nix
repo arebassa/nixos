@@ -15,7 +15,6 @@
     '';
   };
 
-  {
   home.file.".ssh".config = {
     source = "~/.ssh";
     mode = "0700";
