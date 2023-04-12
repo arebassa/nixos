@@ -15,13 +15,4 @@
     '';
   };
 
-  home.file.".ssh".config = {
-    source = "~/.ssh";
-    mode = "0700";
-  };
-
-  home.file.".ssh/config".config = {
-    source = "~/.ssh/config";
-    mode = "0600";
-  };
 }
