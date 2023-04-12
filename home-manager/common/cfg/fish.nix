@@ -18,6 +18,10 @@ in {
         description = "Run: cd /etc/nixos";
         body = "cd /etc/nixos";
       };
+      gcb = {
+        description = "Copy git commit bug template";
+        body = "echo 'fix: :bug: ' | xclip -selection clipboard";
+      };
     };
   };
 
