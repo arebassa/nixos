@@ -31,6 +31,7 @@ in {
     gnome.gnome-tweaks
     gnome.gnome-keyring
     dconf
+    dracula-theme
 
     ### Communication
     mailspring
