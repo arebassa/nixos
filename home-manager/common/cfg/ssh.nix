@@ -4,6 +4,7 @@
     enable = true;
   };
 
+  # Create ~/.ssh/config file
   home.file.".ssh/config".text = ''
     # use 1password to manage ssh keys
      Host *
