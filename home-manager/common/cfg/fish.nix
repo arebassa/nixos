@@ -8,6 +8,21 @@ in {
       set -x NIXOS_OZONE_WL 1
     '';
 
+    plugins = [
+      {
+        name = "tide";
+        inherit (pkgs.fishPlugins.tide) src;
+      }
+      {
+        name = "z";
+        src = pkgs.z-src;
+      }
+      {
+        name = "autopair";
+        inherit (pkgs.fishPlugins.autopair) src;
+      }
+    ];
+
     # fish functions
     functions = {
       do-switch = {

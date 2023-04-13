@@ -54,6 +54,11 @@ in {
 
     # Add the berkeley-mono package to the list
     berkeley-mono
+
+    # Fish
+    fishPlugins.tide
+    fishPlugins.autopair
+    z-src
   ];
 
 }
