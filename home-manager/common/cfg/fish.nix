@@ -10,10 +10,6 @@ in {
 
     plugins = [
       {
-        name = "tide";
-        inherit (pkgs.fishPlugins.tide) src;
-      }
-      {
         name = "autopair";
         inherit (pkgs.fishPlugins.autopair) src;
       }
