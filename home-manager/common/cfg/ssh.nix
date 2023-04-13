@@ -5,6 +5,8 @@
   };
 
   # Create ~/.ssh/config file
+  # Need to run in the terminal once:
+  # ssh-add ~/.ssh/id_rsa
   home.file.".ssh/config".text = ''
     # use 1password to manage ssh keys
      Host *
