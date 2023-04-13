@@ -5,7 +5,7 @@
     extraConfig = ''
       Host *
         IdentityAgent ~/.1password/agent.sock
-        AddKeysToAgent yes
+        # AddKeysToAgent yes
 
       Host github.com
         HostName github.com
