@@ -6,7 +6,7 @@
     ./encryption.nix
     ./fish.nix
     ./git.nix
-    # ./gnome.nix
+    ./gnome.nix
     ./ncspot.nix
     ./neovim.nix
     ./ssh.nix
