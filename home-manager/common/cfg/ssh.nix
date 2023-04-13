@@ -3,6 +3,7 @@
   programs.ssh = {
     enable = true;
     extraConfig = ''
+    # use 1password to manage ssh keys
       Host *
         IdentityAgent ~/.1password/agent.sock
         # AddKeysToAgent yes
