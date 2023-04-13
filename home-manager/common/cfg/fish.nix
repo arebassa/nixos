@@ -36,6 +36,19 @@ in {
     };
   };
 
+  # Starship prompt
+  programs.starship = {
+    enable = true;
+    enableFishIntegration = true;
+    settings = {
+      # # https://starship.rs/config/#prompt
+      # prompt = "🐚 ";
+      # # https://starship.rs/config/#add_newline
+      # addNewline = false;
+      # # https://starship.rs/config/#format
+      # format = "$prompt $username $directory $git_branch $git_status $cmd_duration $line_break $jobs $character";
+    };
+  };
   # oh-my-posh
 
   # programs.oh-my-posh = {

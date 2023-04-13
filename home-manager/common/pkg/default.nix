@@ -56,8 +56,7 @@ in {
     berkeley-mono
 
     # Fish
-    fishPlugins.tide
-    fishPlugins.autopair
+    starship
   ];
 
 }
