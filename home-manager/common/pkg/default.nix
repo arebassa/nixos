@@ -58,7 +58,7 @@ in {
     # Fish
     fishPlugins.tide
     fishPlugins.autopair
-    z-src
+    fishPlugins.z
   ];
 
 }

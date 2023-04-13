@@ -15,7 +15,8 @@ in {
       }
       {
         name = "z";
-        src = pkgs.z-src;
+        inherit (pkgs.fishPlugins.z) src;
+
       }
       {
         name = "autopair";
