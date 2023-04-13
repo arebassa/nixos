@@ -1,29 +1,67 @@
 { pkgs, ... }: {
   # ...
   environment.systemPackages = with pkgs; [
-    wget
-    xclip
-    bluez
+    ### Gnome
+    gnome.gnome-tweaks
+    gnome.gnome-keyring
     dconf
     dconf2nix
-    vscode-fhs
+    gnomeExtensions.space-bar
+    gnomeExtensions.thinkpad-battery-threshold
+    gnomeExtensions.grand-theft-focus
+    gnomeExtensions.rounded-window-corners
+    gnomeExtensions.pop-shell
+    gnomeExtensions.caffeine
+    gnomeExtensions.user-themes
+
+    ### Terminal
+    wget
+    xclip
     ripgrep
-    tailscale
-    oh-my-posh
-    fish
-    wezterm
     htop
     age
     fd
     tree
+    gnupg
+    fzf
+    _1password
+
+    ### Bluetooth
+    bluez
+
+    ### Dev
+    vscode-fhs
     git
     gnumake
     git-crypt
-    gnupg
-    fzf
-    kopia
+    shadowenv
+    difftastic
+    nixfmt
+    doppler
+    gh
+
+    ### Networking
+    tailscale
+    nextdns
+
+    ### Shell
+    fish
+    starship
+    wezterm
+
+    ### Backup
     restic
     autorestic
+
+    ### General GUI
+    _1password-gui
+    google-chrome
+
+    ### Communication
+    element-desktop
+    zoom-us
+    slack
+
   ];
   # ...
 }

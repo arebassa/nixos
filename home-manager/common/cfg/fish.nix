@@ -119,15 +119,5 @@ in {
       time.disabled = false;
     };
   };
-  # oh-my-posh
-
-  # programs.oh-my-posh = {
-  #   enable = true;
-  #   enableFishIntegration = true;
-  #   # https://ohmyposh.dev/docs/themes.
-  #   # Must be an official theme
-  #   useTheme = "cobalt2";
-
-  # };
 
 }
