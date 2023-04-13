@@ -14,11 +14,6 @@ in {
         inherit (pkgs.fishPlugins.tide) src;
       }
       {
-        name = "z";
-        inherit (pkgs.fishPlugins.z) src;
-
-      }
-      {
         name = "autopair";
         inherit (pkgs.fishPlugins.autopair) src;
       }
