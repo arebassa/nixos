@@ -49,7 +49,7 @@ install: ## install nix.conf
 	@cp home/.config/nix/nix.config ~/.config/nix/
 	@echo "${YELLOW}install of nix.conf - ${GREEN} COMPETED. ${RESET}"
 switch: ## copy *.nix and rebuild switch
-	@echo "${BLUE}... copying *.nix / nixos rebuild switch ${RESET}"
+	@echo "${BLUE}... nixos rebuild switch ${RESET}"
 	@sudo nixos-rebuild switch --flake .#
 	@echo "${YELLOW}RUN nixos-rebuild switch - ${GREEN} COMPETED. ${RESET}"
 # remote-switch: ## run cfg from GH repo
