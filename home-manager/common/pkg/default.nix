@@ -20,11 +20,16 @@ let
 in {
   home.packages = with pkgs; [
 
-       # Called for above
+    # Called for above
     # default-python
 
     # Add the berkeley-mono package to the list
     berkeley-mono
+    roboto-slab
+    fira
+    fira-code
+    fira-code-symbols
+    (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
   ];
 
 }

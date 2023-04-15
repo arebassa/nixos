@@ -82,13 +82,13 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
-      document-font-name = "Berkeley Mono 11";
+      document-font-name = "Roboto Slab 11";
       enable-hot-corners = false;
       font-antialiasing = "rgba";
       font-hinting = "full";
-      font-name = "Berkeley Mono 11";
+      font-name = "Fira Sans Semi-Light 10";
       gtk-theme = "Adwaita-dark";
-      monospace-font-name = "Berkeley Mono 10";
+      monospace-font-name = "FiraCode Nerd Font Mono 11";
     };
 
     "org/gnome/desktop/notifications" = {
@@ -184,7 +184,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/wm/preferences" = {
-      titlebar-font = "Berkeley Mono Bold 11";
+      titlebar-font = "Fira Sans Semi-Bold 10";
     };
 
     "org/gnome/epiphany" = {
@@ -212,6 +212,7 @@ with lib.hm.gvariant;
       default-folder-viewer = "icon-view";
       migrated-gtk-settings = true;
       search-filter-time-type = "last_modified";
+      search-view = "list-view";
     };
 
     "org/gnome/nautilus/window-state" = {
@@ -278,6 +279,10 @@ with lib.hm.gvariant;
     "org/gnome/shell/extensions/thinkpad-battery-threshold" = {
       debug-mode = true;
       indicator-mode = "ACTIVE";
+    };
+
+    "org/gnome/shell/extensions/user-theme" = {
+      name = "";
     };
 
     "org/gnome/shell/keybindings" = {
