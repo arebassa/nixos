@@ -58,7 +58,7 @@ return {
   color_schemes = {
     ["Adwaita Dark"] = adwaita_dark
   },
-  font = wezterm.font 'Berkeley Mono Variable',
+  -- font = wezterm.font 'Berkeley Mono Variable',
   font_size = 18.0,
 
   cursor_blink_rate = 800,
