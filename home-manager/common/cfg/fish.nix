@@ -13,6 +13,8 @@ in {
       inherit (pkgs.fishPlugins.autopair) src;
     }];
 
+    # fish aliases
+    shellAliases = { exa = "exa -al --octal-permissions"; };
     # fish functions
     functions = {
       do-switch = {
@@ -26,10 +28,6 @@ in {
       gcb = {
         description = "Copy git commit bug template";
         body = "echo 'fix: :bug: ' | xclip -selection clipboard";
-      };
-      exa = {
-        description = "alias exa to my preferences";
-        body = "exa -al --octal-permissions";
       };
     };
   };
