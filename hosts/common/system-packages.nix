@@ -25,7 +25,6 @@
     gnupg
     fzf
     exa
-    dust
     _1password
 
     ### Bluetooth
