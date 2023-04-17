@@ -27,6 +27,10 @@ in {
         description = "Copy git commit bug template";
         body = "echo 'fix: :bug: ' | xclip -selection clipboard";
       };
+      exa = {
+        description = "alias exa to my preferences";
+        body = "exa -al --octal-permissions";
+      };
     };
   };
 
