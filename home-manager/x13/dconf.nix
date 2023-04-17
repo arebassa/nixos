@@ -45,7 +45,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/control-center" = {
-      last-panel = "mouse";
+      last-panel = "keyboard";
       window-state = mkTuple [ 936 560 ];
     };
 
@@ -229,8 +229,8 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       binding = "<Super>t";
-      command = "/etc/profiles/per-user/dustin/bin/wezterm";
-      name = "Open Wez";
+      command = "/etc/profiles/per-user/dustin/bin/alacritty";
+      name = "Open Alacritty";
     };
 
     "org/gnome/settings-daemon/plugins/power" = {
