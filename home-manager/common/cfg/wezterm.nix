@@ -59,6 +59,7 @@ return {
     ["Adwaita Dark"] = adwaita_dark
   },
   -- font = wezterm.font 'Berkeley Mono Variable',
+  font = wezterm.font 'FiraCode Nerd Font',
   font_size = 18.0,
 
   cursor_blink_rate = 800,
