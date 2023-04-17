@@ -30,7 +30,7 @@
 
   networking.hostName = "dustin-krysak"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-  
+
   # NextDNS
   # NOTE - need to run `sudo nextdns activate` once
   services.nextdns = {
@@ -95,7 +95,7 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
-  
+
   # Enable Bluetooth
   hardware.bluetooth.enable = true;
 
@@ -103,7 +103,7 @@
   users.users.dustin = {
     isNormalUser = true;
     description = "Dustin Krysak";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "docker" ];
     shell = "/etc/profiles/per-user/dustin/bin/fish";
     packages = with pkgs; [
     #  thunderbird
@@ -112,10 +112,10 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-  
+
   # Enable dconf
   programs.dconf.enable = true;
-  
+
   # Enable Nix/Flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -138,7 +138,7 @@
 
   # Enable the OpenSSH daemon.
   services.openssh.enable = true;
-  
+
   # Enable Tailscale
   services.tailscale.enable = true;
 
