@@ -24,6 +24,8 @@
     tree
     gnupg
     fzf
+    exa
+    dust
     _1password
 
     ### Bluetooth
@@ -48,7 +50,7 @@
     ### Shell
     fish
     starship
-    wezterm
+    # wezterm
 
     ### Backup
     restic
