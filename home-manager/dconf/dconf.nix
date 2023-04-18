@@ -265,6 +265,8 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/pop-shell" = {
+      active-hint = true;
+      active-hint-border-radius = mkUint32 5;
       fullscreen-launcher = true;
       gap-inner = mkUint32 4;
       gap-outer = mkUint32 4;
