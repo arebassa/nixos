@@ -1,4 +1,8 @@
 { config, pkgs, ... }: {
+
+  environment.systemPackages = with pkgs; [
+    nextdns
+  ];
   # NextDNS
   # NOTE - need to run `sudo nextdns activate` once
   services.nextdns = {

@@ -44,7 +44,7 @@
 
     ### Networking
     tailscale
-    nextdns
+
 
     ### Shell
     fish
