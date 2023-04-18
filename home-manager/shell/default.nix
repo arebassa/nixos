@@ -8,7 +8,7 @@
     ./fish.nix
     ./git.nix
     ./python.nix
-#    ./ssh.nix
+    #    ./ssh.nix
     # ./wezterm.nix
 
   ];
