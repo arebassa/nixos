@@ -48,10 +48,17 @@ install: ## install nix.conf
 	@mkdir -p ~/.config/nix
 	@cp home/.config/nix/nix.config ~/.config/nix/
 	@echo "${YELLOW}install of nix.conf - ${GREEN} COMPETED. ${RESET}"
-switch: ## copy *.nix and rebuild switch
-	@echo "${BLUE}... nixos rebuild switch ${RESET}"
-	@sudo nixos-rebuild switch --flake .#
+switch-x13: #switch-x13: ## copy *.nix and rebuild switch for x13
+	@echo "${BLUE}... nixos rebuild switch - x13${RESET}"
+	# escaping the #
+	@sudo nixos-rebuild switch --flake .#\dustin-krysak
 	@echo "${YELLOW}RUN nixos-rebuild switch - ${GREEN} COMPETED. ${RESET}"
+switch-tower # copy *.nix and rebuild switch for tower
+	@echo "${BLUE}... nixos rebuild switch - tower ${RESET}"
+	# escaping the #
+	@sudo nixos-rebuild switch --flake .#\tower
+	@echo "${YELLOW}RUN nixos-rebuild switch - ${GREEN} COMPETED. ${RESET}"
+
 # remote-switch: ## run cfg from GH repo
 # 	@echo "${BLUE}... RUNNING: nixos-rebuild switch --flake github:bashfulrobot/nixos#dustin-krysak --no-write-lock-file ${RESET}"
 # 	@sudo nixos-rebuild switch --flake github:bashfulrobot/nixos#dustin-krysak --no-write-lock-file
