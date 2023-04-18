@@ -61,8 +61,7 @@
     _1password-gui
     google-chrome
     todoist-electron
-    insync-v3
-
+    grive2
     ### Communication
     element-desktop
     zoom-us
