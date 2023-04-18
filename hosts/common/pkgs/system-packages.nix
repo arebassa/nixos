@@ -13,6 +13,7 @@
     gnomeExtensions.pop-shell
     gnomeExtensions.caffeine
     gnomeExtensions.user-themes
+    gnome.dconf-editor
 
     ### Terminal
     wget
