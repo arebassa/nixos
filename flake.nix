@@ -25,7 +25,27 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.dustin = import ./home-manager/x13/home.nix;
+            home-manager.users.dustin = import ./home-manager/home.nix;
+
+            # Allow unfree packages
+            nixpkgs.config.allowUnfree = true;
+
+            # Optionally, use home-manager.extraSpecialArgs to pass
+            # arguments to home.nix
+          }
+        ];
+      };
+      # tower = desktop hostname
+      tower = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          ./hosts/tower/configuration.nix
+          # nixos-hardware.nixosModules.lenovo-thinkpad-x13-yoga
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.dustin = import ./home-manager/home.nix;
 
             # Allow unfree packages
             nixpkgs.config.allowUnfree = true;
