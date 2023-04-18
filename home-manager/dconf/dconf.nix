@@ -18,7 +18,7 @@ with lib.hm.gvariant;
     };
 
      "org/gnome/shell/extensions/pop-shell" = {
-      hint-color-rgba = mkVariant "rgb(141,118,191)";
+      hint-color-rgba = mkVariant "#aa00ff";
      };
 
     "org/gnome/Connections" = {
