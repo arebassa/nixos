@@ -9,7 +9,7 @@
   home.homeDirectory = "/home/dustin";
 
   # Packages and settings installed to the user profile.
-  imports = [ ./pkg ./cfg ./dconf.nix ];
+  imports = [ ./fonts ./cfg ./dconf ./python ];
 
 
   # git configurations
