@@ -19,10 +19,8 @@
   boot.initrd.secrets = { "/crypto_keyfile.bin" = null; };
 
   # Enable swap on luks
-  boot.initrd.luks.devices."luks-7b945ed6-92e6-4762-a6e3-9ce164c61a40".device =
-    "/dev/disk/by-uuid/7b945ed6-92e6-4762-a6e3-9ce164c61a40";
-  boot.initrd.luks.devices."luks-7b945ed6-92e6-4762-a6e3-9ce164c61a40".keyFile =
-    "/crypto_keyfile.bin";
+  boot.initrd.luks.devices."luks-cf7d6f8b-47f6-41c6-a3ec-6870460dd222".device = "/dev/disk/by-uuid/cf7d6f8b-47f6-41c6-a3ec-6870460dd222";
+  boot.initrd.luks.devices."luks-cf7d6f8b-47f6-41c6-a3ec-6870460dd222".keyFile = "/crypto_keyfile.bin";
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
