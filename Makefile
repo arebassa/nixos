@@ -53,7 +53,7 @@ switch-x13: #switch-x13: ## copy *.nix and rebuild switch for x13
 	# escaping the #
 	@sudo nixos-rebuild switch --flake .#\dustin-krysak
 	@echo "${YELLOW}RUN nixos-rebuild switch - ${GREEN} COMPETED. ${RESET}"
-switch-tower # copy *.nix and rebuild switch for tower
+switch-tower: # copy *.nix and rebuild switch for tower
 	@echo "${BLUE}... nixos rebuild switch - tower ${RESET}"
 	# escaping the #
 	@sudo nixos-rebuild switch --flake .#\tower
