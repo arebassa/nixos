@@ -64,6 +64,7 @@
     element-desktop
     zoom-us
     slack
+    rocketchat-desktop
 
   ];
   # ...
