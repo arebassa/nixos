@@ -49,6 +49,7 @@
     ### Shell
     fish
     starship
+    tmux
     # wezterm
 
     ### Backup
