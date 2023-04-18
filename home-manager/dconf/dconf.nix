@@ -5,6 +5,14 @@ with lib.hm.gvariant;
 
 {
   dconf.settings = {
+    "ca/desrt/dconf-editor" = {
+      saved-pathbar-path = "/org/gnome/shell/extensions/pop-shell/";
+      saved-view = "/org/gnome/shell/extensions/pop-shell/";
+      window-height = 1089;
+      window-is-maximized = false;
+      window-width = 936;
+    };
+
     "org/blueman/general" = {
       window-properties = [ 730 528 0 0 ];
     };
@@ -16,10 +24,6 @@ with lib.hm.gvariant;
     "org/blueman/plugins/recentconns" = {
       recent-connections = "[{'adapter': 'F4:26:79:CE:03:AF', 'address': '65:82:86:A8:4D:2F', 'alias': '65-82-86-A8-4D-2F', 'icon': 'blueman', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1679417917.6529262'}, {'adapter': 'F4:26:79:CE:03:AF', 'address': 'D0:14:85:5E:27:AB', 'alias': 'D0-14-85-5E-27-AB', 'icon': 'blueman', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1679417986.546906'}, {'adapter': 'F4:26:79:CE:03:AF', 'address': '57:F5:31:50:25:61', 'alias': '57-F5-31-50-25-61', 'icon': 'blueman', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1679418691.4191337'}, {'adapter': 'F4:26:79:CE:03:AF', 'address': '62:79:C2:94:D2:2A', 'alias': '62-79-C2-94-D2-2A', 'icon': 'blueman', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1679418734.680901'}]";
     };
-
-    #  "org/gnome/shell/extensions/pop-shell" = {
-    #   hint-color-rgba = "#aa00ff";
-    #  };
 
     "org/gnome/Connections" = {
       first-run = false;
@@ -249,7 +253,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/caffeine" = {
-      indicator-position-max = 1;
+      indicator-position-max = 2;
     };
 
     "org/gnome/shell/extensions/gtile" = {
@@ -264,6 +268,7 @@ with lib.hm.gvariant;
       fullscreen-launcher = true;
       gap-inner = mkUint32 4;
       gap-outer = mkUint32 4;
+      hint-color-rgba = "rgba(82,148,226,0.8)";
       smart-gaps = true;
       tile-by-default = true;
     };
