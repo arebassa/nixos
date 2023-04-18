@@ -1,8 +1,8 @@
 home-manager/cfg/git.nix filter=git-crypt diff=git-crypt
-home-manager/pkg/fonts/BerkeleyMono-Bold.ttf filter=git-crypt diff=git-crypt
-home-manager/pkg/fonts/BerkeleyMono-BoldItalic.ttf filter=git-crypt diff=git-crypt
-home-manager/pkg/fonts/BerkeleyMono-Italic.ttf filter=git-crypt diff=git-crypt
-home-manager/pkg/fonts/BerkeleyMono-Regular.ttf filter=git-crypt diff=git-crypt
-home-manager/pkg/fonts/BerkeleyMonoVariable-Italic.ttf filter=git-crypt diff=git-crypt
-home-manager/pkg/fonts/BerkeleyMonoVariable-Regular.ttf filter=git-crypt diff=git-crypt
+home-manager/fonts/BerkeleyMono-Bold.ttf filter=git-crypt diff=git-crypt
+home-manager/fonts/BerkeleyMono-BoldItalic.ttf filter=git-crypt diff=git-crypt
+home-manager/fonts/BerkeleyMono-Italic.ttf filter=git-crypt diff=git-crypt
+home-manager/fonts/BerkeleyMono-Regular.ttf filter=git-crypt diff=git-crypt
+home-manager/fonts/BerkeleyMonoVariable-Italic.ttf filter=git-crypt diff=git-crypt
+home-manager/fonts/BerkeleyMonoVariable-Regular.ttf filter=git-crypt diff=git-crypt
 home-manager/x13/kopia.nix filter=git-crypt diff=git-crypt
