@@ -192,6 +192,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/wm/preferences" = {
+      button-layout = ":";
       titlebar-font = "Fira Sans Semi-Bold 10";
     };
 
