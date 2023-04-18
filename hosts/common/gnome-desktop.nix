@@ -24,7 +24,8 @@
   # High quality BT calls
   hardware.bluetooth = {
     enable = true;
-    hsphfpd = { enable = true; };
+    # conflicts with Wireplumber
+    # hsphfpd = { enable = true; };
   };
 
   # Enable CUPS to print documents.
