@@ -58,6 +58,7 @@
     ### General GUI
     _1password-gui
     google-chrome
+    todoist-electron
 
     ### Communication
     element-desktop
