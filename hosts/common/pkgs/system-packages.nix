@@ -61,6 +61,7 @@
     _1password-gui
     google-chrome
     todoist-electron
+    insync-v3
 
     ### Communication
     element-desktop
