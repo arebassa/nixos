@@ -21,7 +21,11 @@
   networking.networkmanager.enable = true;
 
   # Enable Bluetooth
-  hardware.bluetooth.enable = true;
+  # High quality BT calls
+  hardware.bluetooth = {
+    enable = true;
+    hsphfpd = { enable = true; };
+  };
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -41,5 +45,29 @@
     # use the example session manager (no others are packaged yet so this is enabled by default,
     # no need to redefine it in your config for now)
     #media-session.enable = true;
+
+    # High quality BT calls
+    media-session.config.bluez-monitor.rules = [
+      {
+        # Matches all cards
+        matches = [{ "device.name" = "~bluez_card.*"; }];
+        actions = {
+          "update-props" = {
+            "bluez5.auto-connect" = [ "hfp_hf" "hsp_hs" "a2dp_sink" ];
+          };
+        };
+      }
+      {
+        matches = [
+          # Matches all sources
+          {
+            "node.name" = "~bluez_input.*";
+          }
+          # Matches all outputs
+          { "node.name" = "~bluez_output.*"; }
+        ];
+        actions = { "node.pause-on-idle" = false; };
+      }
+    ];
   };
 }

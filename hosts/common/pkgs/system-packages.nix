@@ -29,7 +29,6 @@
 
     ### Bluetooth
     bluez
-    blueman
 
     ### Dev
     vscode-fhs
