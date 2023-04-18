@@ -61,7 +61,7 @@
     _1password-gui
     google-chrome
     todoist-electron
-    grive2
+
     ### Communication
     element-desktop
     zoom-us
