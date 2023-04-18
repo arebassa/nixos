@@ -248,7 +248,7 @@ with lib.hm.gvariant;
 
     "org/gnome/shell" = {
       disabled-extensions = [ "space-bar@luchrioh" ];
-      enabled-extensions = [ "caffeine@patapon.info" "grand-theft-focus@zalckos.github.com" "gTile@vibou" "rounded-window-corners@yilozt" "thinkpad-battery-threshold@marcosdalvarez.org" "user-theme@gnome-shell-extensions.gcampax.github.com" "pop-shell@system76.com" "hidetopbar@mathieu.bidon.ca" ];
+      enabled-extensions = [ "caffeine@patapon.info" "grand-theft-focus@zalckos.github.com" "gTile@vibou" "rounded-window-corners@yilozt" "thinkpad-battery-threshold@marcosdalvarez.org" "user-theme@gnome-shell-extensions.gcampax.github.com" "pop-shell@system76.com" "hidetopbar@mathieu.bidon.ca" "gtktitlebar@velitasali.github.io" ];
       last-selected-power-profile = "power-saver";
       welcome-dialog-last-shown-version = "43.2";
     };
@@ -263,6 +263,11 @@ with lib.hm.gvariant;
       theme = "Default";
       window-margin = 4;
       window-margin-fullscreen-enabled = true;
+    };
+
+    "org/gnome/shell/extensions/gtktitlebar" = {
+      hide-window-titlebars = "always";
+      restrict-to-primary-screen = true;
     };
 
     "org/gnome/shell/extensions/hidetopbar" = {
