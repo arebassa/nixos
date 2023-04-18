@@ -17,7 +17,9 @@ with lib.hm.gvariant;
       recent-connections = "[{'adapter': 'F4:26:79:CE:03:AF', 'address': '65:82:86:A8:4D:2F', 'alias': '65-82-86-A8-4D-2F', 'icon': 'blueman', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1679417917.6529262'}, {'adapter': 'F4:26:79:CE:03:AF', 'address': 'D0:14:85:5E:27:AB', 'alias': 'D0-14-85-5E-27-AB', 'icon': 'blueman', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1679417986.546906'}, {'adapter': 'F4:26:79:CE:03:AF', 'address': '57:F5:31:50:25:61', 'alias': '57-F5-31-50-25-61', 'icon': 'blueman', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1679418691.4191337'}, {'adapter': 'F4:26:79:CE:03:AF', 'address': '62:79:C2:94:D2:2A', 'alias': '62-79-C2-94-D2-2A', 'icon': 'blueman', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1679418734.680901'}]";
     };
 
-     "/org/gnome/shell/extensions/pop-shell/hint-color-rgba" = mkVariant "rgb(141,118,191)";
+     "/org/gnome/shell/extensions/pop-shell" = {
+      hint-color-rgba = mkVariant "rgb(141,118,191)";
+     };
 
     "org/gnome/Connections" = {
       first-run = false;
