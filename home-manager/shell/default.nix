@@ -7,14 +7,12 @@
     ./encryption.nix
     ./fish.nix
     ./git.nix
-    ./ncspot.nix
-    ./neovim.nix
+    ./python.nix
     ./ssh.nix
     # ./wezterm.nix
 
   ];
 
   programs = { home-manager.enable = true; };
-  fonts.fontconfig.enable = true;
 
 }

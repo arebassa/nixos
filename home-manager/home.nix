@@ -9,11 +9,9 @@
   home.homeDirectory = "/home/dustin";
 
   # Packages and settings installed to the user profile.
-  imports = [ ./fonts ./cfg ./dconf ./python ];
+  imports = [ ./shell ./fonts ./pkgs ./dconf ];
 
-
-  # git configurations
-  # programs.git = gitConfig.programs.git;
+  fonts.fontconfig.enable = true;
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
