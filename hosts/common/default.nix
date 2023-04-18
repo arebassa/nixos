@@ -4,10 +4,10 @@
   imports = [
     ./user.nix
     ./gnome-desktop.nix
-    ./1password.nix
-    ./system-packages.nix
-    ./docker.nix
-    ./nextdns.nix
+    ./pkgs/1password.nix
+    ./pkgs/system-packages.nix
+    ./pkgs/docker.nix
+    ./pkgs/nextdns.nix
   ];
 
   # Enable Nix/Flakes
