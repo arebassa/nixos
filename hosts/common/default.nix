@@ -4,7 +4,6 @@
   imports = [
     ./pkgs/1password.nix
     ./pkgs/docker.nix
-    ./pkgs/go.nix
     ./pkgs/nextdns.nix
     ./pkgs/system-packages.nix
 
