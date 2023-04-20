@@ -7,8 +7,6 @@
     ./encryption.nix
     ./fish.nix
     ./git.nix
-    ./go.nix
-    ./python.nix
     #    ./ssh.nix
     # ./wezterm.nix
 

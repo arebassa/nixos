@@ -9,7 +9,7 @@
   home.homeDirectory = "/home/dustin";
 
   # Packages and settings installed to the user profile.
-  imports = [ ./shell ./fonts ./pkgs ./dconf ];
+  imports = [ ./shell ./fonts ./pkgs ./dconf ./development ];
 
   fonts.fontconfig.enable = true;
 
