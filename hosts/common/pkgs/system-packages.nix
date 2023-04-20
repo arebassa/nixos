@@ -27,6 +27,7 @@
     fzf
     exa
     _1password
+    paplay
 
     ### Bluetooth
     bluez
