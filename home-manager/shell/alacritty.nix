@@ -2,6 +2,7 @@
   programs.alacritty = {
     enable = true;
     settings = {
+      # good
       # Enable true color support
       env.TERM = "alacritty";
       scrolling = {
