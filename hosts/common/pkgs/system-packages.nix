@@ -27,7 +27,7 @@
     fzf
     exa
     _1password
-    paplay
+    rclone
 
     ### Bluetooth
     bluez
