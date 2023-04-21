@@ -7,7 +7,7 @@
     ./encryption.nix
     ./fish.nix
     ./git.nix
-    #    ./ssh.nix
+    ./ssh.nix
     # ./wezterm.nix
 
   ];
