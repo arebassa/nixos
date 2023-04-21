@@ -4,8 +4,10 @@
   imports = [
     ./pkgs/1password.nix
     ./pkgs/docker.nix
-    ./pkgs/nextdns.nix
     ./pkgs/insecure-packages.nix
+    ./pkgs/nextdns.nix
+    ./pkgs/system-packages.nix
+
 
     ./gnome-desktop.nix
     ./user.nix
