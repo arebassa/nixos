@@ -33,7 +33,6 @@
     bluez
 
     ### Dev
-    # vscode-fhs
     vscode
     gitkraken
     git
