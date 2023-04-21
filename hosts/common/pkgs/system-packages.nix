@@ -27,7 +27,7 @@
     fzf
     exa
     _1password
-    rclone
+    google-drive-ocamlfuse
 
     ### Bluetooth
     bluez
