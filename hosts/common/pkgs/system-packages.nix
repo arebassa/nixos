@@ -33,7 +33,6 @@
     bluez
 
     ### Dev
-    # vscode
     gitkraken
     git
     gnumake
@@ -46,7 +45,6 @@
 
     ### Networking
     tailscale
-
 
     ### Shell
     fish
