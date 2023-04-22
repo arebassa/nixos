@@ -39,15 +39,6 @@ POUND = \#
 # TOWER-PLAYBOOK = playbooks/tower.yaml
 USER = dustin
 
-first-run: ## used on a brand new install one time
-	@echo "${BLUE}... running first-run setup ${RESET}"
-	@NIX_CONFIG = "experimental-features = nix-command flakes";
-	@echo "${YELLOW}first-run - ${GREEN} COMPETED. ${RESET}"
-install: ## install nix.conf
-	@echo "${BLUE}... installing nix.conf ${RESET}"
-	@mkdir -p ~/.config/nix
-	@cp home/.config/nix/nix.config ~/.config/nix/
-	@echo "${YELLOW}install of nix.conf - ${GREEN} COMPETED. ${RESET}"
 switch-x13: #switch-x13: ## copy *.nix and rebuild switch for x13
 	@echo "${BLUE}... nixos rebuild switch - x13${RESET}"
 	# escaping the #
