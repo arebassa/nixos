@@ -5,6 +5,7 @@
   services.xserver.enable = true;
 
   # Enable flatpak
+    # Not really used other than for a work around with VScode.
   services.flatpak.enable = true;
 
   # Enable the GNOME Desktop Environment.
