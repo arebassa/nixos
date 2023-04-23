@@ -53,8 +53,7 @@
     ### Shell
     fish
     starship
-
-    # wezterm
+    appimage-run
 
     ### Backup
     restic
