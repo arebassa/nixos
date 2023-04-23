@@ -8,7 +8,6 @@
     ./pkgs/nextdns.nix
     ./pkgs/system-packages.nix
 
-
     ./gnome-desktop.nix
     ./user.nix
   ];

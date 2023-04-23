@@ -33,6 +33,7 @@
     bluez
 
     ### Dev
+    vscode-fhs
     gitkraken
     git
     gnumake
