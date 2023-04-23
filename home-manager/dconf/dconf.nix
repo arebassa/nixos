@@ -232,6 +232,10 @@ with lib.hm.gvariant;
       last-folder-path = "/home/dustin/dev/nixos";
     };
 
+    "org/gnome/portal/filechooser/com/visualstudio/code" = {
+      last-folder-path = "/home/dustin/dev/nixos";
+    };
+
     "org/gnome/settings-daemon/plugins/color" = {
       night-light-enabled = true;
     };
@@ -251,10 +255,14 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell" = {
-      disabled-extensions = [ "space-bar@luchrioh" ];
+      disabled-extensions = [ "space-bar@luchrioh" "appindicatorsupport@rgcjonas.gmail.com" ];
       enabled-extensions = [ "caffeine@patapon.info" "grand-theft-focus@zalckos.github.com" "gTile@vibou" "rounded-window-corners@yilozt" "thinkpad-battery-threshold@marcosdalvarez.org" "user-theme@gnome-shell-extensions.gcampax.github.com" "pop-shell@system76.com" "hidetopbar@mathieu.bidon.ca" "gtktitlebar@velitasali.github.io" "trayIconsReloaded@selfmade.pl" ];
       last-selected-power-profile = "power-saver";
       welcome-dialog-last-shown-version = "43.2";
+    };
+
+    "org/gnome/shell/extensions/appindicator" = {
+      legacy-tray-enabled = false;
     };
 
     "org/gnome/shell/extensions/caffeine" = {
