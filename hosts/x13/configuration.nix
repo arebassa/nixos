@@ -6,23 +6,12 @@
 
 {
   imports = [ # Include the results of the hardware scan.
+    ./disks.nix
     ./hardware-configuration.nix
     ./init.nix
   ];
 
-  # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.efi.efiSysMountPoint = "/boot/efi";
 
-  # Setup keyfile
-  boot.initrd.secrets = {
-    "/crypto_keyfile.bin" = null;
-  };
-
-  # Enable swap on luks
-  boot.initrd.luks.devices."luks-12c4b859-9520-4875-8176-6d13f659eefb".device = "/dev/disk/by-uuid/12c4b859-9520-4875-8176-6d13f659eefb";
-  boot.initrd.luks.devices."luks-12c4b859-9520-4875-8176-6d13f659eefb".keyFile = "/crypto_keyfile.bin";
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
