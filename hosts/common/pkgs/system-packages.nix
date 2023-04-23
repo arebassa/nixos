@@ -25,12 +25,15 @@
     tree
     gnupg
     fzf
-    exa
     _1password
     google-drive-ocamlfuse
 
     ### Bluetooth
     bluez
+
+    ### Cloud
+    kubectl
+    terraform
 
     ### Dev
     vscode
@@ -50,7 +53,7 @@
     ### Shell
     fish
     starship
-    tmux
+
     # wezterm
 
     ### Backup

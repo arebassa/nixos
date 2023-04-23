@@ -4,6 +4,7 @@
   imports = [
     ./ncspot.nix
     ./neovim.nix
+    ./shell.nix
 
   ];
 
