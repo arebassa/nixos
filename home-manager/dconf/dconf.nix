@@ -228,6 +228,10 @@ with lib.hm.gvariant;
       initial-size = mkTuple [ 890 550 ];
     };
 
+    "org/gnome/portal/filechooser/com/visualstudio/code" = {
+      last-folder-path = "/home/dustin/dev/nixos";
+    };
+
     "org/gnome/settings-daemon/plugins/color" = {
       night-light-enabled = true;
     };
@@ -248,7 +252,7 @@ with lib.hm.gvariant;
 
     "org/gnome/shell" = {
       disabled-extensions = [ "space-bar@luchrioh" ];
-      enabled-extensions = [ "caffeine@patapon.info" "grand-theft-focus@zalckos.github.com" "gTile@vibou" "rounded-window-corners@yilozt" "thinkpad-battery-threshold@marcosdalvarez.org" "user-theme@gnome-shell-extensions.gcampax.github.com" "pop-shell@system76.com" "hidetopbar@mathieu.bidon.ca" "gtktitlebar@velitasali.github.io" ];
+      enabled-extensions = [ "caffeine@patapon.info" "grand-theft-focus@zalckos.github.com" "gTile@vibou" "rounded-window-corners@yilozt" "thinkpad-battery-threshold@marcosdalvarez.org" "user-theme@gnome-shell-extensions.gcampax.github.com" "pop-shell@system76.com" "hidetopbar@mathieu.bidon.ca" "gtktitlebar@velitasali.github.io" "trayIconsReloaded@selfmade.pl" ];
       last-selected-power-profile = "power-saver";
       welcome-dialog-last-shown-version = "43.2";
     };
@@ -303,6 +307,10 @@ with lib.hm.gvariant;
       indicator-mode = "ACTIVE";
     };
 
+    "org/gnome/shell/extensions/trayIconsReloaded" = {
+      applications = "[{\"id\":\"1password.desktop\"}]";
+    };
+
     "org/gnome/shell/extensions/user-theme" = {
       name = "";
     };
@@ -313,6 +321,12 @@ with lib.hm.gvariant;
 
     "org/gnome/shell/world-clocks" = {
       locations = "@av []";
+    };
+
+    "org/gnome/software" = {
+      check-timestamp = mkInt64 1682268388;
+      first-run = false;
+      flatpak-purge-timestamp = mkInt64 1682277531;
     };
 
     "org/gnome/tweaks" = {
@@ -330,6 +344,7 @@ with lib.hm.gvariant;
       sort-directories-first = false;
       sort-order = "ascending";
       type-format = "category";
+      view-type = "list";
       window-size = mkTuple [ 888 374 ];
     };
 
