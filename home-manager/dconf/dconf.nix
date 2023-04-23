@@ -232,10 +232,6 @@ with lib.hm.gvariant;
       last-folder-path = "/home/dustin/dev/nixos";
     };
 
-    "org/gnome/portal/filechooser/com/visualstudio/code" = {
-      last-folder-path = "/home/dustin/dev/nixos";
-    };
-
     "org/gnome/settings-daemon/plugins/color" = {
       night-light-enabled = true;
     };
