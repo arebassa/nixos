@@ -14,7 +14,6 @@
     gnomeExtensions.caffeine
     gnomeExtensions.user-themes
     gnome.dconf-editor
-
     ### Terminal
     wget
     xclip
@@ -27,14 +26,11 @@
     fzf
     _1password
     google-drive-ocamlfuse
-
     ### Bluetooth
     bluez
-
     ### Cloud
     kubectl
     terraform
-
     ### Dev
     vscode
     gitkraken
@@ -46,30 +42,25 @@
     nixfmt
     doppler
     gh
-
     ### Networking
     tailscale
-
     ### Shell
     fish
     starship
     appimage-run
-
     ### Backup
     restic
     autorestic
-
     ### General GUI
     _1password-gui
     google-chrome
     todoist-electron
-
+    flameshot
     ### Communication
     element-desktop
     zoom-us
     slack
     rocketchat-desktop
-
   ];
   # ...
 }
