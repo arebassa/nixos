@@ -7,3 +7,4 @@ home-manager/fonts/BerkeleyMonoVariable-Italic.ttf filter=git-crypt diff=git-cry
 home-manager/fonts/BerkeleyMonoVariable-Regular.ttf filter=git-crypt diff=git-crypt
 home-manager/x13/kopia.nix filter=git-crypt diff=git-crypt
 home-manager/shell/ssh.nix filter=git-crypt diff=git-crypt
+home-manager/srvcs/spotifyd.nix filter=git-crypt diff=git-crypt
