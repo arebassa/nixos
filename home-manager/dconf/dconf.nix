@@ -54,7 +54,7 @@ with lib.hm.gvariant;
 
     "org/gnome/control-center" = {
       last-panel = "keyboard";
-      window-state = mkTuple [ 936 560 ];
+      window-state = mkTuple [ 936 1136 ];
     };
 
     "org/gnome/desktop/app-folders" = {
@@ -143,6 +143,10 @@ with lib.hm.gvariant;
       application-id = "org.wezfurlong.wezterm.desktop";
     };
 
+    "org/gnome/desktop/notifications/application/rocketchat-desktop" = {
+      application-id = "rocketchat-desktop.desktop";
+    };
+
     "org/gnome/desktop/notifications/application/slack" = {
       application-id = "slack.desktop";
     };
@@ -209,6 +213,20 @@ with lib.hm.gvariant;
       migrated = true;
     };
 
+    "org/gnome/file-roller/listing" = {
+      list-mode = "as-folder";
+      name-column-width = 250;
+      show-path = false;
+      sort-method = "name";
+      sort-type = "ascending";
+    };
+
+    "org/gnome/file-roller/ui" = {
+      sidebar-width = 200;
+      window-height = 513;
+      window-width = 1384;
+    };
+
     "org/gnome/mutter" = {
       attach-modal-dialogs = true;
       dynamic-workspaces = true;
@@ -225,7 +243,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/nautilus/window-state" = {
-      initial-size = mkTuple [ 890 550 ];
+      initial-size = mkTuple [ 1920 1168 ];
     };
 
     "org/gnome/portal/filechooser/com/visualstudio/code" = {
@@ -237,7 +255,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/settings-daemon/plugins/media-keys" = {
-      custom-keybindings = [ "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/" ];
+      custom-keybindings = [ "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/" ];
     };
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
@@ -246,11 +264,18 @@ with lib.hm.gvariant;
       name = "Open Alacritty";
     };
 
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
+      binding = "Print";
+      command = "/etc/profiles/per-user/dustin/bin/flameshot gui";
+      name = "Flameshot";
+    };
+
     "org/gnome/settings-daemon/plugins/power" = {
       sleep-inactive-ac-timeout = 5400;
     };
 
     "org/gnome/shell" = {
+      disable-user-extensions = false;
       disabled-extensions = [ "space-bar@luchrioh" "appindicatorsupport@rgcjonas.gmail.com" ];
       enabled-extensions = [ "caffeine@patapon.info" "grand-theft-focus@zalckos.github.com" "gTile@vibou" "rounded-window-corners@yilozt" "thinkpad-battery-threshold@marcosdalvarez.org" "user-theme@gnome-shell-extensions.gcampax.github.com" "pop-shell@system76.com" "hidetopbar@mathieu.bidon.ca" "gtktitlebar@velitasali.github.io" "trayIconsReloaded@selfmade.pl" ];
       last-selected-power-profile = "power-saver";
@@ -320,6 +345,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/keybindings" = {
+      show-screenshot-ui = [ "<Shift><Control><Alt>p" ];
       toggle-message-tray = [];
     };
 
