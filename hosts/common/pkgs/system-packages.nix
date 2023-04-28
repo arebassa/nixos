@@ -26,7 +26,7 @@
     fzf
     _1password
     google-drive-ocamlfuse
-    spotifyd
+
     ### Bluetooth
     bluez
     ### Cloud

@@ -1,6 +1,6 @@
 { pkgs, ... }: {
 
-  imports = [ ./spotifyd.nix ];
+  # imports = [ ./spotifyd.nix ];
 
   services.flameshot.enable = true;
 }
