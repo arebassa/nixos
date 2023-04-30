@@ -42,12 +42,17 @@ USER = dustin
 x13-cfg-update: ## Rebuild configuration for x13
 	@echo "${BLUE}... Rebuild configuration for x13...${RESET}"
 	@echo "${GREEN} Running:  ${YELLOW} sudo nixos-rebuild switch --flake .#\dustin-krysak  ${RESET}"
+	@sleep 2
 	@sudo nixos-rebuild switch --flake .#\dustin-krysak
 	@echo "${YELLOW}RUN nixos-rebuild switch - ${GREEN} COMPETED. ${RESET}"
 x13-pkg-update: ## Rebuild configuration and update packages for x13
-	@echo "${BLUE}... nixos rebuild switch - x13${RESET}"
+	@echo "${BLUE}... Rebuild configuration and update packages for x13 ...${RESET}"
+	@echo "${GREEN} Running:  ${YELLOW} nix flake update ${RESET}"
+	@sleep 2
 	@nix flake update
-	@sudo nixos-rebuild switch --upgrade --flake .#\dustin-krysak
+	@echo "${GREEN} Running:  ${YELLOW} sudo nixos-rebuild switch --upgrade --flake .#\dustin-krysak${RESET}"
+	@sleep 2
+	@echo sudo nixos-rebuild switch --upgrade --flake .#\dustin-krysak
 	@echo "${YELLOW}RUN nixos-rebuild switch - ${GREEN} COMPETED. ${RESET}"
 tower-cfg-update: ## Rebuild configuration for tower
 	@echo "${BLUE}... nixos rebuild switch - tower ${RESET}"
