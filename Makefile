@@ -7,7 +7,7 @@ SHELL=/run/current-system/sw/bin/bash
 # the first 15 entries are the 8-bit colors
 
 # define standard colors
-ifneq (,$(findstring xterm,${TERM}))
+ifneq (,$(findstring xterm,${TERM},alacritty))
 	BLACK        := $(shell tput -Txterm setaf 0)
 	RED          := $(shell tput -Txterm setaf 1)
 	GREEN        := $(shell tput -Txterm setaf 2)
