@@ -39,14 +39,18 @@ POUND = \#
 # TOWER-PLAYBOOK = playbooks/tower.yaml
 USER = dustin
 
-switch-x13: #switch-x13: ## copy *.nix and rebuild switch for x13
-	@echo "${BLUE}... nixos rebuild switch - x13${RESET}"
-	# escaping the #
+x13-cfg-update: ## Rebuild configuration for x13
+	@echo "${BLUE}... Rebuild configuration for x13...${RESET}"
+	@echo "${GREEN} Running:  ${YELLOW} sudo nixos-rebuild switch --flake .#\dustin-krysak  ${RESET}"
 	@sudo nixos-rebuild switch --flake .#\dustin-krysak
 	@echo "${YELLOW}RUN nixos-rebuild switch - ${GREEN} COMPETED. ${RESET}"
-switch-tower: # copy *.nix and rebuild switch for tower
+x13-pkg-update: ## Rebuild configuration and update packages for x13
+	@echo "${BLUE}... nixos rebuild switch - x13${RESET}"
+	@nix flake update
+	@sudo nixos-rebuild switch --upgrade --flake .#\dustin-krysak
+	@echo "${YELLOW}RUN nixos-rebuild switch - ${GREEN} COMPETED. ${RESET}"
+tower-cfg-update: ## Rebuild configuration for tower
 	@echo "${BLUE}... nixos rebuild switch - tower ${RESET}"
-	# escaping the #
 	@sudo nixos-rebuild switch --flake .#\tower
 	@echo "${YELLOW}RUN nixos-rebuild switch - ${GREEN} COMPETED. ${RESET}"
 
