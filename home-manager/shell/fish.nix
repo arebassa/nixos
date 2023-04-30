@@ -8,10 +8,16 @@ in {
       set -x NIXOS_OZONE_WL 1
     '';
 
-    plugins = [{
-      name = "autopair";
-      inherit (pkgs.fishPlugins.autopair) src;
-    }];
+    plugins = [
+      {
+        name = "autopair";
+        inherit (pkgs.fishPlugins.autopair) src;
+      }
+      {
+        name = "bass";
+        inherit (pkgs.fishPlugins.bass) src;
+      }
+    ];
 
     # fish aliases
     # shellAliases = { exa = "exa -al --octal-permissions"; };
