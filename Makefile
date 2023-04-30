@@ -52,7 +52,7 @@ x13-pkg-update: ## Rebuild configuration and update packages for x13
 	@nix flake update
 	@echo "${GREEN} Running:  ${YELLOW} sudo nixos-rebuild switch --upgrade --flake .#\dustin-krysak${RESET}"
 	@sleep 2
-	@echo sudo nixos-rebuild switch --upgrade --flake .#\dustin-krysak
+	@sudo nixos-rebuild switch --upgrade --flake .#\dustin-krysak
 	@echo "${YELLOW}RUN nixos-rebuild switch - ${GREEN} COMPETED. ${RESET}"
 tower-cfg-update: ## Rebuild configuration for tower
 	@echo "${BLUE}... nixos rebuild switch - tower ${RESET}"
