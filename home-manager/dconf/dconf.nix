@@ -151,6 +151,10 @@ with lib.hm.gvariant;
       application-id = "slack.desktop";
     };
 
+    "org/gnome/desktop/notifications/application/todoist-electron" = {
+      application-id = "todoist-electron.desktop";
+    };
+
     "org/gnome/desktop/notifications/application/zoom" = {
       application-id = "Zoom.desktop";
     };
