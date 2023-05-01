@@ -6,6 +6,9 @@ in {
     enable = true;
     shellInit = ''
       set -x NIXOS_OZONE_WL 1
+      set -x PATH ~/.npm-packages/bin $PATH
+      set -x NODE_PATH ~/.npm-packages/lib/node_modules
+
     '';
 
     plugins = [

@@ -4,6 +4,7 @@
   imports = [
     ./go.nix
     ./python.nix
+    ./npm.nix
 
   ];
 
