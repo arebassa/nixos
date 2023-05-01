@@ -4,13 +4,15 @@ WIP - There are caveats that I need to document here. Currently for example, my 
 
 ## Table of Contents
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [TODO](#todo)
+- [nixos config](#nixos-config)
+    - [Table of Contents](#table-of-contents)
+    - [About](#about-)
+    - [Getting Started](#getting-started-)
+    - [TODO](#todo-)
 
 ## About <a name = "about"></a>
 
-This is a simple nixos setup leveraging flakes, and home-manager with the gnome desktop. 
+This is a simple nixos setup leveraging flakes, and home-manager with the gnome desktop.
 
 ## Getting Started <a name = "getting_started"></a>
 
@@ -20,18 +22,17 @@ This is a simple nixos setup leveraging flakes, and home-manager with the gnome 
 
 ## TODO <a name = "todo"></a>
 
-- [x] finish `oh-my-posh` prompt theme
-- [ ] configure `vscode`
+- [x] configure `vscode`
 - [ ] configure `espanso`
-- [ ] add all my terminal tools (ie - `exa`, `dust`, etc)
-- [ ] add fish config
-- [ ] install golang
-- [ ] change window close shortcut to `ctrl-q`
-- [ ] figure out dconf skeleton
-- [ ] configure gnome settings via dconf
+- [x] add all my terminal tools (ie - `exa`, `dust`, etc)
+- [x] add fish config
+- [x] install golang
+- [x] change window close shortcut to `ctrl-q`
+- [x] figure out dconf skeleton
+- [x] configure gnome settings via dconf
 - [ ] automate install.
     - [ ] Look at disk partitions as code with [disko](https://github.com/nix-community/disko)
         - [ ] time to rethink file systems
-- [ ] sanitize `configuration.nix` and `hardware-configuration.nix` for reuse.
+- [x] sanitize `configuration.nix` and `hardware-configuration.nix` for reuse.
 - [ ] start skeleton to add cfg for my tower
 - [ ] build tower cfg...
