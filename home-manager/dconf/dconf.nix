@@ -139,6 +139,10 @@ with lib.hm.gvariant;
       application-id = "org.gnome.Settings.desktop";
     };
 
+    "org/gnome/desktop/notifications/application/org-gnome-texteditor" = {
+      application-id = "org.gnome.TextEditor.desktop";
+    };
+
     "org/gnome/desktop/notifications/application/org-wezfurlong-wezterm" = {
       application-id = "org.wezfurlong.wezterm.desktop";
     };
@@ -280,8 +284,8 @@ with lib.hm.gvariant;
 
     "org/gnome/shell" = {
       disable-user-extensions = false;
-      disabled-extensions = [ "space-bar@luchrioh" "appindicatorsupport@rgcjonas.gmail.com" ];
-      enabled-extensions = [ "caffeine@patapon.info" "grand-theft-focus@zalckos.github.com" "gTile@vibou" "rounded-window-corners@yilozt" "thinkpad-battery-threshold@marcosdalvarez.org" "user-theme@gnome-shell-extensions.gcampax.github.com" "pop-shell@system76.com" "hidetopbar@mathieu.bidon.ca" "gtktitlebar@velitasali.github.io" "trayIconsReloaded@selfmade.pl" ];
+      disabled-extensions = [ "space-bar@luchrioh" ];
+      enabled-extensions = [ "caffeine@patapon.info" "grand-theft-focus@zalckos.github.com" "gTile@vibou" "rounded-window-corners@yilozt" "thinkpad-battery-threshold@marcosdalvarez.org" "user-theme@gnome-shell-extensions.gcampax.github.com" "pop-shell@system76.com" "hidetopbar@mathieu.bidon.ca" "gtktitlebar@velitasali.github.io" "trayIconsReloaded@selfmade.pl" "appindicatorsupport@rgcjonas.gmail.com" ];
       last-selected-power-profile = "power-saver";
       welcome-dialog-last-shown-version = "43.2";
     };
@@ -291,7 +295,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/caffeine" = {
-      indicator-position-max = 2;
+      indicator-position-max = 1;
     };
 
     "org/gnome/shell/extensions/gtile" = {
@@ -358,7 +362,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/software" = {
-      check-timestamp = mkInt64 1682268388;
+      check-timestamp = mkInt64 1682970765;
       first-run = false;
       flatpak-purge-timestamp = mkInt64 1682277531;
     };
