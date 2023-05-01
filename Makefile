@@ -58,6 +58,15 @@ tower-cfg-update: ## Rebuild configuration for tower
 	@echo "${BLUE}... nixos rebuild switch - tower ${RESET}"
 	@sudo nixos-rebuild switch --flake .#\tower --show-trace
 	@echo "${YELLOW}RUN nixos-rebuild switch - ${GREEN} COMPETED. ${RESET}"
+tower-pkg-update: ## Rebuild configuration and update packages for tower
+	@echo "${BLUE}... Rebuild configuration and update packages for tower ...${RESET}"
+	@echo "${GREEN} Running:  ${YELLOW} nix flake update ${RESET}"
+	@sleep 2
+	@nix flake update
+	@echo "${GREEN} Running:  ${YELLOW} sudo nixos-rebuild switch --upgrade --flake .#\tower${RESET}"
+	@sleep 2
+	@sudo nixos-rebuild switch --upgrade --flake .#\tower
+	@echo "${YELLOW}RUN nixos-rebuild switch - ${GREEN} COMPETED. ${RESET}"
 
 # remote-switch: ## run cfg from GH repo
 # 	@echo "${BLUE}... RUNNING: nixos-rebuild switch --flake github:bashfulrobot/nixos#dustin-krysak --no-write-lock-file ${RESET}"
