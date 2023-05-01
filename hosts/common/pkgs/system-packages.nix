@@ -43,6 +43,7 @@
     nixfmt
     doppler
     gh
+    nodejs-19_x
     ### Networking
     tailscale
     ### Shell
