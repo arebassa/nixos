@@ -8,7 +8,7 @@
   home.username = "dustin";
   home.homeDirectory = "/home/dustin";
   # Packages and settings installed to the user profile.
-  imports = [ ./shell ./fonts ./pkgs ./srvcs ./dconf ./development ];
+  imports = [ ./shell ./fonts ./pkgs ./srvcs ./dconf ./development ./autostart ];
   fonts.fontconfig.enable = true;
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
