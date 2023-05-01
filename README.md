@@ -5,10 +5,12 @@ WIP - There are caveats that I need to document here. Currently for example, my 
 ## Table of Contents
 
 - [nixos config](#nixos-config)
-    - [Table of Contents](#table-of-contents)
-    - [About](#about-)
-    - [Getting Started](#getting-started-)
-    - [TODO](#todo-)
+  - [Table of Contents](#table-of-contents)
+  - [About ](#about-)
+  - [Getting Started ](#getting-started-)
+  - [Manual Steps](#manual-steps)
+    - [opencommit](#opencommit)
+  - [TODO ](#todo-)
 
 ## About <a name = "about"></a>
 
@@ -19,6 +21,19 @@ This is a simple nixos setup leveraging flakes, and home-manager with the gnome 
 - install nixos from the ISO with the Gnome Desktop
 - clone the repository with `mkdir -p ~/dev/ && cd ~/dev/ && git clone git@github.com:bashfulrobot/nixos && cd ~/dev/nixos`
 - Run `sudo nixos-rebuild switch --flake .#`
+
+## Manual Steps
+
+For now I have a few manual steps post install.
+
+### opencommit
+
+- `npm i -g opencommit`
+- (may need reboot)
+- `oc config set OPENAI_API_KEY=xxxxxxxxx`
+- `oc config set emoji=true`
+- `oc config set description=true`
+- `oc hook set` (in any git repo I want to use it with vscode)
 
 ## TODO <a name = "todo"></a>
 
