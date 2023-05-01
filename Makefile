@@ -56,7 +56,7 @@ x13-pkg-update: ## Rebuild configuration and update packages for x13
 	@echo "${YELLOW}RUN nixos-rebuild switch - ${GREEN} COMPETED. ${RESET}"
 tower-cfg-update: ## Rebuild configuration for tower
 	@echo "${BLUE}... nixos rebuild switch - tower ${RESET}"
-	@sudo nixos-rebuild switch --flake .#\tower
+	@sudo nixos-rebuild switch --flake .#\tower --show-trace
 	@echo "${YELLOW}RUN nixos-rebuild switch - ${GREEN} COMPETED. ${RESET}"
 
 # remote-switch: ## run cfg from GH repo
