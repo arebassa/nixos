@@ -45,17 +45,20 @@
             }
           ];
         };
-        # tower = desktop hostname
+        # tower = work laptop hostname
         tower = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = [
+            sops-nix.nixosModules.sops
             ./hosts/tower/configuration.nix
-            # nixos-hardware.nixosModules.lenovo-thinkpad-x13-yoga
             home-manager.nixosModules.home-manager
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.dustin = import ./home-manager/home.nix;
+              home-manager.users.dustin = {
+                imports =
+                  [ ./home-manager/home.nix sops-nix.homeManagerModule ];
+              };
 
               # Allow unfree packages
               nixpkgs.config.allowUnfree = true;
