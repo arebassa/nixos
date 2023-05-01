@@ -23,6 +23,7 @@ This is a simple nixos setup leveraging flakes, and home-manager with the gnome 
 ## TODO <a name = "todo"></a>
 
 - [ ] add sops-nix
+- [ ] update docs for new process once sops is setup
 - [x] configure `vscode`
 - [ ] configure `espanso`
 - [x] add all my terminal tools (ie - `exa`, `dust`, etc)
