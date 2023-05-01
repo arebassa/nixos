@@ -24,17 +24,9 @@ This is a simple nixos setup leveraging flakes, and home-manager with the gnome 
 
 - [ ] add sops-nix
 - [ ] update docs for new process once sops is setup
-- [x] configure `vscode`
 - [ ] configure `espanso`
-- [x] add all my terminal tools (ie - `exa`, `dust`, etc)
-- [x] add fish config
-- [x] install golang
-- [x] change window close shortcut to `ctrl-q`
-- [x] figure out dconf skeleton
-- [x] configure gnome settings via dconf
 - [ ] automate install.
     - [ ] Look at disk partitions as code with [disko](https://github.com/nix-community/disko)
         - [ ] time to rethink file systems
-- [x] sanitize `configuration.nix` and `hardware-configuration.nix` for reuse.
 - [ ] start skeleton to add cfg for my tower
 - [ ] build tower cfg...
