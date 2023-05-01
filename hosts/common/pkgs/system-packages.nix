@@ -60,7 +60,6 @@
     flameshot
     ### Communication
     element-desktop
-    zoom-us
     slack
     rocketchat-desktop
   ];
