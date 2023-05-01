@@ -13,7 +13,9 @@
     gnomeExtensions.pop-shell
     gnomeExtensions.caffeine
     gnomeExtensions.user-themes
+    gnomeExtensions.appindicator
     gnome.dconf-editor
+    gnome.adwaita-icon-theme
     ### Terminal
     wget
     xclip

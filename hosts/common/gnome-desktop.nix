@@ -5,7 +5,7 @@
   services.xserver.enable = true;
 
   # Enable flatpak
-    # Not really used other than for a work around with VScode.
+  # Not really used other than for a work around with VScode.
   services.flatpak.enable = true;
 
   # Enable the GNOME Desktop Environment.
@@ -31,7 +31,8 @@
     # conflicts with Wireplumber
     # hsphfpd = { enable = true; };
   };
-
+  # ensure gnome-settings-daemon udev rules are enabled - appindicator
+  services.udev.packages = with pkgs; [ gnome.gnome-settings-daemon ];
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
