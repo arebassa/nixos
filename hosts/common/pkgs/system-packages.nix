@@ -44,6 +44,11 @@
     doppler
     gh
     nodejs-19_x
+    (npmGlobalPackages.override {
+      packages = [
+        { name = "opencommit"; }
+      ];
+    })
     ### Networking
     tailscale
     ### Shell
