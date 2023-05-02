@@ -10,6 +10,6 @@
     shell = "/etc/profiles/per-user/dustin/bin/fish";
   };
 
-  # Profile Picture
+  # Profile Picture for gnome
   home.file.".face".source = files/home/.face;
 }
