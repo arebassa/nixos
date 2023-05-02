@@ -7,6 +7,8 @@
   # paths it should manage.
   home.username = "dustin";
   home.homeDirectory = "/home/dustin";
+  # Profile Picture for gnome
+  home.file.".face".source = "../home/.face";
   # Packages and settings installed to the user profile.
   imports = [ ./shell ./fonts ./pkgs ./srvcs ./dconf ./development ./autostart ];
   fonts.fontconfig.enable = true;
