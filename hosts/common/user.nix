@@ -11,5 +11,5 @@
   };
 
   # Profile Picture for gnome
-  home.file.".face".source = files/home/.face;
+  home.file.".face".source = ../../files/home/.face;
 }
