@@ -5,7 +5,11 @@
   users.users.dustin = {
     isNormalUser = true;
     description = "Dustin Krysak";
-    extraGroups = [ "networkmanager" "wheel" "docker" "onepassword" "onepassword-cli" ];
+    extraGroups =
+      [ "networkmanager" "wheel" "docker" "onepassword" "onepassword-cli" ];
     shell = "/etc/profiles/per-user/dustin/bin/fish";
   };
+
+  # Profile Picture
+  home.file.".face".source = files/home/.face;
 }
