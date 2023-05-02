@@ -33,6 +33,7 @@
     bluez
     ### Cloud
     kubectl
+    kubernetes-helm
     terraform
     ### Dev
     vscode
