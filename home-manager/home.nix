@@ -8,9 +8,13 @@
   home.username = "dustin";
   home.homeDirectory = "/home/dustin";
   # Profile Picture for gnome
-  home.file.".face".source = "../home/.face";
+  home.file.face = {
+    target = ".face";
+    source = ../home/.face;
+  };
   # Packages and settings installed to the user profile.
-  imports = [ ./shell ./fonts ./pkgs ./srvcs ./dconf ./development ./autostart ];
+  imports =
+    [ ./shell ./fonts ./pkgs ./srvcs ./dconf ./development ./autostart ];
   fonts.fontconfig.enable = true;
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
