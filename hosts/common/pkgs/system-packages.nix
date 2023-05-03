@@ -31,7 +31,7 @@
     _1password
     google-drive-ocamlfuse
     gparted
-    ntfs-3g
+    ntfs3g
     ### Bluetooth
     bluez
     ### Cloud
