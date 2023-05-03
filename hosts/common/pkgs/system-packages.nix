@@ -30,7 +30,8 @@
     fzf
     _1password
     google-drive-ocamlfuse
-
+    gparted
+    ntfs-3g
     ### Bluetooth
     bluez
     ### Cloud
@@ -63,7 +64,6 @@
     google-chrome
     todoist-electron
     flameshot
-    gparted
     ### Communication
     element-desktop
     slack
