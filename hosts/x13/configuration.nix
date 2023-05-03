@@ -9,6 +9,7 @@
     ./disks.nix
     ./hardware-configuration.nix
     ./init.nix
+    ./99-thinkpad-thresholds-udev.nix
   ];
 
 
