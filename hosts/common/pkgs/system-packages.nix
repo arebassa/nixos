@@ -17,6 +17,7 @@
     gnome.dconf-editor
     gnome.adwaita-icon-theme
     ### Terminal
+    parted
     coreutils
     wget
     xclip
@@ -29,7 +30,9 @@
     fzf
     _1password
     google-drive-ocamlfuse
-
+    gparted
+    ntfs3g
+    rclone
     ### Bluetooth
     bluez
     ### Cloud
