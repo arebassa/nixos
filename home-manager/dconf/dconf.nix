@@ -54,7 +54,7 @@ with lib.hm.gvariant;
 
     "org/gnome/control-center" = {
       last-panel = "keyboard";
-      window-state = mkTuple [ 1920 1168 ];
+      window-state = mkTuple [ 3440 1408 ];
     };
 
     "org/gnome/desktop/app-folders" = {
@@ -101,6 +101,10 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/notifications" = {
       application-children = [ "gnome-network-panel" "gnome-power-panel" "org-gnome-epiphany" "org-gnome-console" "firefox" "code" "google-chrome" "org-gnome-settings" "slack" "zoom" "element-desktop" ];
+    };
+
+    "org/gnome/desktop/notifications/application/1password" = {
+      application-id = "1password.desktop";
     };
 
     "org/gnome/desktop/notifications/application/code" = {
@@ -161,6 +165,10 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/notifications/application/zoom" = {
       application-id = "Zoom.desktop";
+    };
+
+    "org/gnome/desktop/peripherals/keyboard" = {
+      numlock-state = true;
     };
 
     "org/gnome/desktop/peripherals/touchpad" = {
@@ -285,8 +293,8 @@ with lib.hm.gvariant;
 
     "org/gnome/shell" = {
       disable-user-extensions = false;
-      disabled-extensions = [ "space-bar@luchrioh" ];
-      enabled-extensions = [ "caffeine@patapon.info" "grand-theft-focus@zalckos.github.com" "gTile@vibou" "rounded-window-corners@yilozt" "thinkpad-battery-threshold@marcosdalvarez.org" "user-theme@gnome-shell-extensions.gcampax.github.com" "pop-shell@system76.com" "hidetopbar@mathieu.bidon.ca" "gtktitlebar@velitasali.github.io" "trayIconsReloaded@selfmade.pl" "appindicatorsupport@rgcjonas.gmail.com" ];
+      disabled-extensions = [ "space-bar@luchrioh" "thinkpad-battery-threshold@marcosdalvarez.org" ];
+      enabled-extensions = [ "caffeine@patapon.info" "grand-theft-focus@zalckos.github.com" "gTile@vibou" "rounded-window-corners@yilozt" "pop-shell@system76.com" "hidetopbar@mathieu.bidon.ca" "gtktitlebar@velitasali.github.io" "trayIconsReloaded@selfmade.pl" "appindicatorsupport@rgcjonas.gmail.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "user-theme@gnome-shell-extensions.gcampax.github.com" "quick-settings-audio-panel@rayzeq.github.io" ];
       last-selected-power-profile = "power-saver";
       welcome-dialog-last-shown-version = "43.2";
     };
@@ -295,8 +303,12 @@ with lib.hm.gvariant;
       legacy-tray-enabled = false;
     };
 
+    "org/gnome/shell/extensions/auto-move-windows" = {
+      application-list = [ "1password.desktop:3" "slack.desktop:2" "rocketchat-desktop.desktop:2" "chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop:2" "code.desktop:4" ];
+    };
+
     "org/gnome/shell/extensions/caffeine" = {
-      indicator-position-max = 2;
+      indicator-position-max = 3;
     };
 
     "org/gnome/shell/extensions/gtile" = {
@@ -326,6 +338,15 @@ with lib.hm.gvariant;
       hint-color-rgba = "rgba(82,148,226,0.8)";
       smart-gaps = true;
       tile-by-default = true;
+    };
+
+    "org/gnome/shell/extensions/quick-settings-audio-panel" = {
+      always-show-input-slider = true;
+      create-mixer-sliders = false;
+      media-control = "duplicate";
+      merge-panel = true;
+      ordering = [ "mixer" "volume-input" "volume-output" "media" ];
+      panel-position = "bottom";
     };
 
     "org/gnome/shell/extensions/rounded-window-corners" = {
@@ -363,9 +384,9 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/software" = {
-      check-timestamp = mkInt64 1682970765;
+      check-timestamp = mkInt64 1683058834;
       first-run = false;
-      flatpak-purge-timestamp = mkInt64 1682277531;
+      flatpak-purge-timestamp = mkInt64 1683076822;
     };
 
     "org/gnome/tweaks" = {
