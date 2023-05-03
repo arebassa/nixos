@@ -62,6 +62,7 @@
     google-chrome
     todoist-electron
     flameshot
+    gparted
     ### Communication
     element-desktop
     slack
