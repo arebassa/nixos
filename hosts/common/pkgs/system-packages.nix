@@ -29,6 +29,7 @@
     fzf
     _1password
     google-drive-ocamlfuse
+    spotify-tui
 
     ### Bluetooth
     bluez
