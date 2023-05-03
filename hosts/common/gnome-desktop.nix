@@ -30,6 +30,16 @@
     enable = true;
     # conflicts with Wireplumber
     # hsphfpd = { enable = true; };
+    # Modern headsets will generally try to connect using the A2DP profile: Enabling A2DP Sink
+
+    settings = {
+      General = {
+        MultiProfile = "multiple";
+        Privacy = "device";
+        FastConnectable = true;
+        Enable = "Control,Gateway,Headset,Media,Sink,Socket,Source";
+      };
+    };
   };
   # ensure gnome-settings-daemon udev rules are enabled - appindicator
   services.udev.packages = with pkgs; [ gnome.gnome-settings-daemon ];
