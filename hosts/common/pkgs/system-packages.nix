@@ -32,6 +32,7 @@
     google-drive-ocamlfuse
     gparted
     ntfs3g
+    rclone
     ### Bluetooth
     bluez
     ### Cloud
