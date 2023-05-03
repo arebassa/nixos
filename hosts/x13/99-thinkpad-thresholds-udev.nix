@@ -10,7 +10,7 @@ let
   '';
 in {
   services.udev.extraRules = udevRules;
-  services.udev.packages = [ extraUdevRules extraHwdbFile ];
+  # services.udev.packages = [ extraUdevRules extraHwdbFile ];
   services.udev.path =
     [ pkgs.coreutils pkgs.gnused pkgs.gnugrep pkgs.util-linux pkgs.udev ];
 
