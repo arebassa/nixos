@@ -1,22 +1,6 @@
 { config, pkgs, ... }:
-# Create this folder for gnome login photo
-let dbDir = "/etc/dconf/db/gdm.d";
-in {
-  # Create this folder for gnome login photo
-  systemd.services.createDir = {
-    description = "Create dconf directory for gdm";
-    wantedBy = [ "sysinit.target" ];
-    serviceConfig.Type = "oneshot";
-    serviceConfig.ExecStartPre = ''
-      # enable write permissions on /etc/dconf
-      mount -o remount,rw /etc/dconf
-      # create new directory for gdm
-      mkdir -p ${dbDir}
-      # restore read-only permissions on /etc/dconf
-      mount -o remount,ro /etc/dconf
-    '';
-  };
 
+{
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
