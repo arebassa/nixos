@@ -9,7 +9,7 @@
     ./disks.nix
     ./hardware-configuration.nix
     ./init.nix
-    ./udev-rules-battery-threshold.nix
+    # ./udev-rules-battery-threshold.nix
 
   ];
 
