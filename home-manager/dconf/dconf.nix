@@ -139,6 +139,10 @@ with lib.hm.gvariant;
       application-id = "org.gnome.Epiphany.desktop";
     };
 
+    "org/gnome/desktop/notifications/application/org-gnome-nautilus" = {
+      application-id = "org.gnome.Nautilus.desktop";
+    };
+
     "org/gnome/desktop/notifications/application/org-gnome-settings" = {
       application-id = "org.gnome.Settings.desktop";
     };
@@ -304,11 +308,11 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/auto-move-windows" = {
-      application-list = [ "1password.desktop:3" "slack.desktop:2" "rocketchat-desktop.desktop:2" "chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop:2" "code.desktop:4" ];
+      application-list = [ "1password.desktop:5" "slack.desktop:2" "rocketchat-desktop.desktop:3" "chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop:3" "code.desktop:4" "todoist-electron.desktop:2" ];
     };
 
     "org/gnome/shell/extensions/caffeine" = {
-      indicator-position-max = 3;
+      indicator-position-max = 1;
     };
 
     "org/gnome/shell/extensions/gtile" = {
@@ -384,7 +388,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/software" = {
-      check-timestamp = mkInt64 1683058834;
+      check-timestamp = mkInt64 1683126823;
       first-run = false;
       flatpak-purge-timestamp = mkInt64 1683076822;
     };
