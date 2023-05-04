@@ -66,6 +66,7 @@
     google-chrome
     todoist-electron
     flameshot
+    teamviewer # Note - I did not start the service. I do not want inbound. Only outbound.
     ### Communication
     element-desktop
     slack
