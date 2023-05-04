@@ -64,6 +64,7 @@
     ### General GUI
     _1password-gui
     google-chrome
+    microsoft-edge-beta
     todoist-electron
     flameshot
     teamviewer
