@@ -43,6 +43,8 @@ with lib.hm.gvariant;
 
     "org/gnome/Geary" = {
       migrated-config = true;
+      window-height = 1136;
+      window-width = 936;
     };
 
     "org/gnome/TextEditor" = {
@@ -52,9 +54,14 @@ with lib.hm.gvariant;
       style-scheme = "Adwaita-dark";
     };
 
+    "org/gnome/Totem" = {
+      active-plugins = [ "open-directory" "movie-properties" "save-file" "vimeo" "apple-trailers" "screenshot" "variable-rate" "autoload-subtitles" "mpris" "recent" "screensaver" "skipto" "rotation" ];
+      subtitle-encoding = "UTF-8";
+    };
+
     "org/gnome/control-center" = {
       last-panel = "keyboard";
-      window-state = mkTuple [ 3440 1408 ];
+      window-state = mkTuple [ 936 1136 ];
     };
 
     "org/gnome/desktop/app-folders" = {
@@ -97,14 +104,19 @@ with lib.hm.gvariant;
       font-name = "Fira Sans Semi-Light 10";
       gtk-theme = "Adwaita-dark";
       monospace-font-name = "FiraCode Nerd Font Mono 11";
+      toolkit-accessibility = false;
     };
 
     "org/gnome/desktop/notifications" = {
-      application-children = [ "gnome-network-panel" "gnome-power-panel" "org-gnome-epiphany" "org-gnome-console" "firefox" "code" "google-chrome" "org-gnome-settings" "slack" "zoom" "element-desktop" ];
+      application-children = [ "gnome-network-panel" "gnome-power-panel" "org-gnome-epiphany" "org-gnome-console" "firefox" "code" "google-chrome" "org-gnome-settings" "slack" "zoom" "element-desktop" "chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-profile-1" ];
     };
 
     "org/gnome/desktop/notifications/application/1password" = {
       application-id = "1password.desktop";
+    };
+
+    "org/gnome/desktop/notifications/application/chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-profile-1" = {
+      application-id = "chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-Profile_1.desktop";
     };
 
     "org/gnome/desktop/notifications/application/code" = {
@@ -226,7 +238,7 @@ with lib.hm.gvariant;
 
     "org/gnome/epiphany/state" = {
       is-maximized = false;
-      window-size = mkTuple [ 936 560 ];
+      window-size = mkTuple [ 936 1136 ];
     };
 
     "org/gnome/evolution-data-server" = {
@@ -263,7 +275,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/nautilus/window-state" = {
-      initial-size = mkTuple [ 1920 1168 ];
+      initial-size = mkTuple [ 1064 560 ];
     };
 
     "org/gnome/portal/filechooser/com/visualstudio/code" = {
@@ -281,8 +293,8 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       binding = "<Super>t";
-      command = "/etc/profiles/per-user/dustin/bin/alacritty";
-      name = "Open Alacritty";
+      command = "/run/current-system/sw/bin/darktile";
+      name = "Open Darktile";
     };
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
@@ -299,8 +311,13 @@ with lib.hm.gvariant;
       disable-user-extensions = false;
       disabled-extensions = [ "space-bar@luchrioh" "thinkpad-battery-threshold@marcosdalvarez.org" ];
       enabled-extensions = [ "caffeine@patapon.info" "grand-theft-focus@zalckos.github.com" "gTile@vibou" "rounded-window-corners@yilozt" "pop-shell@system76.com" "hidetopbar@mathieu.bidon.ca" "gtktitlebar@velitasali.github.io" "trayIconsReloaded@selfmade.pl" "appindicatorsupport@rgcjonas.gmail.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "user-theme@gnome-shell-extensions.gcampax.github.com" "quick-settings-audio-panel@rayzeq.github.io" ];
-      last-selected-power-profile = "power-saver";
+      last-selected-power-profile = "performance";
       welcome-dialog-last-shown-version = "43.2";
+    };
+
+    "org/gnome/shell/extensions/Battery-Health-Charging" = {
+      device-type = 20;
+      install-service = 1;
     };
 
     "org/gnome/shell/extensions/appindicator" = {
@@ -312,7 +329,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/caffeine" = {
-      indicator-position-max = 1;
+      indicator-position-max = 3;
     };
 
     "org/gnome/shell/extensions/gtile" = {
@@ -347,8 +364,8 @@ with lib.hm.gvariant;
     "org/gnome/shell/extensions/quick-settings-audio-panel" = {
       always-show-input-slider = true;
       create-mixer-sliders = false;
-      media-control = "duplicate";
-      merge-panel = true;
+      media-control = "move";
+      merge-panel = false;
       ordering = [ "mixer" "volume-input" "volume-output" "media" ];
       panel-position = "bottom";
     };
@@ -390,7 +407,7 @@ with lib.hm.gvariant;
     "org/gnome/software" = {
       check-timestamp = mkInt64 1683126823;
       first-run = false;
-      flatpak-purge-timestamp = mkInt64 1683076822;
+      flatpak-purge-timestamp = mkInt64 1683164471;
     };
 
     "org/gnome/tweaks" = {
