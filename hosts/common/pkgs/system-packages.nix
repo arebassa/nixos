@@ -18,7 +18,7 @@
     gnome.adwaita-icon-theme
     ### Terminal
     darktile # just testing
-    parted
+    imagemagick_light
     coreutils
     wget
     xclip
