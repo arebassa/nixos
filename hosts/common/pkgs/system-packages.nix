@@ -17,6 +17,7 @@
     gnome.dconf-editor
     gnome.adwaita-icon-theme
     ### Terminal
+    darktile # just testing
     parted
     coreutils
     wget
