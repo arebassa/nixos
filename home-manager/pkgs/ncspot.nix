@@ -5,25 +5,25 @@
       settings = {
         notify = true;
         use_nerdfont = true;
-        #theme = {
-        #  background = "#1c1c1c";
-        #  primary = "#d0d0d0";
-        #  secondary = "#bfbfbf";
-        #  title = "#80c970";
-        #  playing = "#80c970";
-        #  playing_selected = "#a0ffa0";
-        #  playing_bg = "#1c1c1c";
-        #  highlight = "#d0d0d0";
-        #  highlight_bg = "#484848";
-        #  error = "#d0d0d0";
-        #  error_bg = "#ff8080";
-        #  statusbar = "#1c1c1c";
-        #  statusbar_progress = "#80c970";
-        #  statusbar_bg = "#80c970";
-        #  cmdline = "#d0d0d0";
-        #  cmdline_bg = "#1c1c1c";
-        #  search_match = "#ff8080";
-        #};
+        theme = {
+          background = "#2e3436"
+          primary = "#eeeeec"
+          secondary = "#babdb6"
+          title = "#729fcf"
+          playing = "#729fcf"
+          playing_selected = "#ffffff"
+          playing_bg = "#555753"
+          highlight = "#8ae234"
+          highlight_bg = "#2e3436"
+          error = "#fce94f"
+          error_bg = "#a40000"
+          statusbar = "#eeeeec"
+          statusbar_progress = "#729fcf"
+          statusbar_bg = "#555753"
+          cmdline = "#eeeeec"
+          cmdline_bg = "#2e3436"
+
+        };
       };
     };
   };
