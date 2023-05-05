@@ -38,6 +38,13 @@ in {
         autocmd!
         autocmd BufWritePre * undojoin | Neoformat
       augroup END
+
+      " Add FZF Key Mapping
+      nnoremap <C-o> :Files<CR>
+      " Add Find in File shortcut
+      nnoremap <C-f> :noh<CR>/<C-R>=@/<CR><CR>
+
+
     '';
 
   };
