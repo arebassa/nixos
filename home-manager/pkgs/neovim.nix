@@ -42,8 +42,7 @@ in {
       " Add FZF Key Mapping
       nnoremap <C-o> :Files<CR>
       " Add Find in File shortcut
-      nnoremap <C-f> :noh<CR>/<C-R>=@/<CR><CR>
-
+      nnoremap <C-f> :let @/ = input('Search: ')<CR>:set hlsearch<CR>
 
     '';
 
