@@ -68,7 +68,7 @@
     todoist-electron
     flameshot
     teamviewer
-    zoom
+    zoom-us
     ### Communication
     element-desktop
     slack
