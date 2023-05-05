@@ -39,24 +39,11 @@ in {
         autocmd BufWritePre * undojoin | Neoformat
       augroup END
 
+      " YAML documents are required to have a 2 space indentation
+      autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
       " Add FZF Key Mapping
       nnoremap <C-o> :Files<CR>
-
-      " Format key mapping that runs nixfmt or YamlIndent depending on the filetype
-      nnoremap <C-A-f> :call <SID>Format()<CR>
-      function! s:Format()
-        if &filetype == 'nix'
-          execute '!nixfmt %'
-        elseif &filetype == 'yaml'
-          execute ':YamlIndent'
-        endif
-        " Reload the buffer after formatting
-        checktime
-      endfunction
-
-      " Automatically reload the buffer when the file changes on disk
-      " - Used in formatting command above
-      autocmd FocusGained,BufEnter * checktime
 
       " Save key mapping for Ctrl-S
       nnoremap <C-S> :write<CR>
