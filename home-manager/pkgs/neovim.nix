@@ -57,6 +57,13 @@ in {
       " Automatically reload the buffer when the file changes on disk
       " - Used in formatting command above
       autocmd FocusGained,BufEnter * checktime
+
+      " Save key mapping for Ctrl-S
+      nnoremap <C-S> :write<CR>
+
+      " Save and exit key mapping for Ctrl-X
+      nnoremap <C-X> :wq<CR>
+
     '';
 
   };
