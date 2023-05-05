@@ -61,6 +61,7 @@
     google-chrome
     todoist-electron
     flameshot
+    insync-v3
     ### Communication
     element-desktop
     slack
