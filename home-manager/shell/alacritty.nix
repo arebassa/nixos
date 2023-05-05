@@ -2,7 +2,6 @@
   programs.alacritty = {
     enable = true;
     settings = {
-      # good
       # Enable true color support
       env.TERM = "alacritty";
       scrolling = {
@@ -10,70 +9,65 @@
         multiplier = 3;
       };
       colors = {
-        # Default colors
         primary = {
-          background = "#2e3440";
-          foreground = "#d8dee9";
-          dim_foreground = "#a5abb6";
+          background = "#2d2d2d";
+          foreground = "#e7e6e6";
+          dim_foreground = "#b2b2b2";
         };
         cursor = {
-          text = "#2e3440";
-          cursor = "#d8dee9";
+          text = "#2d2d2d";
+          cursor = "#e7e6e6";
         };
         vi_mode_cursor = {
-          text = "#2e3440";
-          cursor = "#d8dee9";
+          text = "#2d2d2d";
+          cursor = "#e7e6e6";
         };
         selection = {
           text = "CellForeground";
-          background = "#4c566a";
+          background = "#555555";
         };
         search = {
           matches = {
             foreground = "CellBackground";
-            background = "#88c0d0";
+            background = "#707070";
           };
           footer_bar = {
-            background = "#434c5e";
-            foreground = "#d8dee9";
+            background = "#2d2d2d";
+            foreground = "#e7e6e6";
           };
         };
-        # Normal colors
         normal = {
-          black = "#3b4252";
-          red = "#bf616a";
-          green = "#a3be8c";
-          yellow = "#ebcb8b";
-          blue = "#81a1c1";
-          magenta = "#b48ead";
-          cyan = "#88c0d0";
-          white = "#e5e9f0";
+          black = "#2d2d2d";
+          red = "#cc6666";
+          green = "#b5bd68";
+          yellow = "#f0c674";
+          blue = "#81a2be";
+          magenta = "#b294bb";
+          cyan = "#8abeb7";
+          white = "#ffffff";
         };
-        # Bright colors
         bright = {
-          black = "#4c566a";
-          red = "#bf616a";
-          green = "#a3be8c";
-          yellow = "#ebcb8b";
-          blue = "#81a1c1";
-          magenta = "#b48ead";
-          cyan = "#8fbcbb";
-          white = "#eceff4";
+          black = "#555555";
+          red = "#cc6666";
+          green = "#b5bd68";
+          yellow = "#f0c674";
+          blue = "#81a2be";
+          magenta = "#b294bb";
+          cyan = "#8abeb7";
+          white = "#ffffff";
         };
-        # Dim colors
         dim = {
-          black = "#373e4d";
-          red = "#94545d";
-          green = "#809575";
-          yellow = "#b29e75";
-          blue = "#68809a";
-          magenta = "#8c738c";
-          cyan = "#6d96a5";
-          white = "#aeb3bb";
+          black = "#1d1d1d";
+          red = "#944b4b";
+          green = "#727a17";
+          yellow = "#b88800";
+          blue = "#47597f";
+          magenta = "#75507b";
+          cyan = "#4d7b72";
+          white = "#858585";
         };
       };
       window = {
-        # Don't show any window decorations
         decorations = "none";
         padding = {
           x = 12;
@@ -83,24 +77,23 @@
       };
       font = {
         normal = {
-          family = "FiraCode Nerd Font";
+          family = "Fira Code";
           style = "Regular";
         };
         bold = {
-          family = "FiraCode Nerd Font";
+          family = "Fira Code";
           style = "Bold";
         };
         italic = {
-          family = "FiraCode Nerd Font";
+          family = "Fira Code";
           style = "Italic";
         };
         bold_italic = {
-          family = "FiraCode Nerd Font";
+          family = "Fira Code";
           style = "Bold Italic";
         };
         size = 18;
       };
-      # Convenient keybindings
       key_bindings = [
         {
           key = "V";
