@@ -43,7 +43,7 @@ in {
       nnoremap <C-o> :Files<CR>
 
       " Format key mapping that runs nixfmt or YamlIndent depending on the filetype
-      nnoremap <C-S-f> :call <SID>Format()<CR>
+      nnoremap <C-A-f> :call <SID>Format()<CR>
       function! s:Format()
         if &filetype == 'nix'
           execute '!nixfmt %'
