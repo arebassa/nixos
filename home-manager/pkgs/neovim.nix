@@ -50,7 +50,13 @@ in {
         elseif &filetype == 'yaml'
           execute ':YamlIndent'
         endif
+        " Reload the buffer after formatting
+        checktime
       endfunction
+
+      " Automatically reload the buffer when the file changes on disk
+      " - Used in formatting command above
+      autocmd FocusGained,BufEnter * checktime
     '';
 
   };
