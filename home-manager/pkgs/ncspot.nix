@@ -6,7 +6,7 @@
         notify = true;
         use_nerdfont = true;
         theme = {
-          background = "#2e3436";
+          background = "#2d2d2d";
           primary = "#eeeeec";
           secondary = "#babdb6";
           title = "#729fcf";
