@@ -42,6 +42,15 @@ in {
       " Add FZF Key Mapping
       nnoremap <C-o> :Files<CR>
 
+      " Format key mapping that runs nixfmt or YamlIndent depending on the filetype
+      nnoremap <C-S-f> :call <SID>Format()<CR>
+      function! s:Format()
+        if &filetype == 'nix'
+          execute '!nixfmt %'
+        elseif &filetype == 'yaml'
+          execute ':YamlIndent'
+        endif
+      endfunction
     '';
 
   };
