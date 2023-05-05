@@ -61,7 +61,7 @@
     google-chrome
     todoist-electron
     flameshot
-    insync-v3
+    # insync-v3 - broken package
     ### Communication
     element-desktop
     slack
