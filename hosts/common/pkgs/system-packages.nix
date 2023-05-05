@@ -6,7 +6,6 @@
     gnome.gnome-keyring
     dconf
     dconf2nix
-    gnomeExtensions.space-bar
     # gnomeExtensions.thinkpad-battery-threshold
     gnomeExtensions.grand-theft-focus
     gnomeExtensions.rounded-window-corners
@@ -17,7 +16,6 @@
     gnome.dconf-editor
     gnome.adwaita-icon-theme
     ### Terminal
-    darktile # just testing
     imagemagick_light
     coreutils
     wget
@@ -30,9 +28,6 @@
     gnupg
     fzf
     _1password
-    google-drive-ocamlfuse
-    gparted
-    ntfs3g
     rclone
     ### Bluetooth
     bluez
@@ -64,10 +59,8 @@
     ### General GUI
     _1password-gui
     google-chrome
-    microsoft-edge-beta
     todoist-electron
     flameshot
-    teamviewer
     ### Communication
     element-desktop
     slack
