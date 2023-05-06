@@ -8,7 +8,7 @@
         theme = {
           background = "#2d2d2d";
           primary = "#eeeeec";
-          secondary = "#b88800";
+          secondary = "#babdb6";
           title = "#729fcf";
           playing = "#ffffff";
           playing_selected = "#ffffff";
