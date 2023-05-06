@@ -23,7 +23,6 @@ in {
     ];
 
     # fish aliases
-    # shellAliases = { exa = "exa -al --octal-permissions"; };
     shellAliases = { j = "just --choose"; };
     # fish functions
     functions = {
