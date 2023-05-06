@@ -10,9 +10,9 @@
           primary = "#eeeeec";
           secondary = "#babdb6";
           title = "#729fcf";
-          playing = "#729fcf";
+          playing = "#ffffff";
           playing_selected = "#ffffff";
-          playing_bg = "#75507b";
+          playing_bg = "#729fcf";
           highlight = "#b88800";
           highlight_bg = "#2e3436";
           error = "#fce94f";
