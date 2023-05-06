@@ -8,7 +8,7 @@
         theme = {
           background = "#2d2d2d";
           primary = "#eeeeec";
-          secondary = "#babdb6";
+          secondary = "#b88800";
           title = "#729fcf";
           playing = "#ffffff";
           playing_selected = "#ffffff";
@@ -21,7 +21,7 @@
           statusbar_progress = "#729fcf";
           statusbar_bg = "#555753";
           cmdline = "#eeeeec";
-          cmdline_bg = "#b88800";
+          cmdline_bg = "#2e3436";
 
         };
       };
