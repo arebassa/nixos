@@ -12,7 +12,7 @@
           title = "#729fcf";
           playing = "#729fcf";
           playing_selected = "#ffffff";
-          playing_bg = "#555753";
+          playing_bg = "#47597f";
           highlight = "#b88800";
           highlight_bg = "#2e3436";
           error = "#fce94f";
