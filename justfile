@@ -1,5 +1,6 @@
 # Docs
 # ---- https://github.com/casey/just
+# ---- https://stackabuse.com/how-to-change-the-output-color-of-echo-in-linux/j
 # load a .env file if in the directory
 set dotenv-load
 # Ignore recipe lines beginning with #.
