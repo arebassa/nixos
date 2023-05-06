@@ -93,7 +93,10 @@ in {
     ];
 
     # fish aliases
-    shellAliases = { j = "just --choose"; };
+    shellAliases = {
+      j = "just --choose";
+      reboot-windows = "sudo systemctl reboot --boot-loader-entry=auto-windows";
+      };
     # fish functions
     functions = {
       do-switch = {
