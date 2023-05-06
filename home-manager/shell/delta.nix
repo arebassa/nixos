@@ -1,4 +1,1 @@
-{ pkgs, ... }: {
-  programs.delta = {
-    enable = true;
-}
+{ pkgs, ... }: { programs.delta = { enable = true; }; }
