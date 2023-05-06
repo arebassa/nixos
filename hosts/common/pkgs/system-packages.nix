@@ -39,6 +39,7 @@
     vscode
     gitkraken
     git
+    just
     gnumake
     git-crypt
     shadowenv
