@@ -20,8 +20,8 @@
           statusbar = "#ffffff";
           statusbar_progress = "#729fcf";
           statusbar_bg = "#555753";
-          cmdline = "#b88800";
-          cmdline_bg = "#2e3436";
+          cmdline = "#eeeeec";
+          cmdline_bg = "#b88800";
 
         };
       };
