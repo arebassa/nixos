@@ -61,22 +61,25 @@ _default:
 # Print `just` help
 help:
     @just --help
-test:
-    @echo "{{GREEN_BOLD_ITALIC}}testing {{RESET}}{{YELLOW}}Just {{GREEN}}!{{RESET}}"
-test2:
-    @echo "testing Just2!"
-# Print your hostname
-host:
-    @echo `hostname`
-# Print your user name
-user:
-    @echo {{env_var('USER')}}
-# Print your homedir
-home:
-    @echo {{env_var('HOME')}}
-# Print the directory where the justfile is located
-root:
-    @echo {{justfile_directory()}}
+# test:
+#     @echo "{{GREEN_BOLD_ITALIC}}testing {{RESET}}{{YELLOW}}Just {{GREEN}}!{{RESET}}"
+# test2:
+#     @echo "testing Just2!"
+# # Print your hostname
+# host:
+#     @echo `hostname`
+# # Print your user name
+# user:
+#     @echo {{env_var('USER')}}
+# # Print your homedir
+# home:
+#     @echo {{env_var('HOME')}}
+# # Print the directory where the justfile is located
+# root:
+#     @echo {{justfile_directory()}}
 # Rebuild nixos cfg on your current host.
 rebuild:
     @sudo nixos-rebuild switch --flake .#\{{`hostname`}}
+# Update Flake & Rebuild nixos cfg on your current host.
+update:
+    nixos-rebuild switch --upgrade --flake .#\{{`hostname`}}
