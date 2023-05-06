@@ -24,7 +24,7 @@ in {
 
     # fish aliases
     # shellAliases = { exa = "exa -al --octal-permissions"; };
-    shellAliases = { just = "just --choose"; };
+    shellAliases = { j = "just --choose"; };
     # fish functions
     functions = {
       do-switch = {
