@@ -1,0 +1,40 @@
+{ pkgs, ... }:
+
+{
+  environment.etc.profile.text = ''
+    # Define some common terminal colors and formatting
+    export BLACK="$(tput setaf 0)"
+    export BLACK_BOLD="$(tput setaf 0; tput bold)"
+    export BLACK_ITALIC="$(tput setaf 0; tput sitm)"
+    export BLACK_BOLD_ITALIC="$(tput setaf 0; tput bold; tput sitm)"
+    export RED="$(tput setaf 1)"
+    export RED_BOLD="$(tput setaf 1; tput bold)"
+    export RED_ITALIC="$(tput setaf 1; tput sitm)"
+    export RED_BOLD_ITALIC="$(tput setaf 1; tput bold; tput sitm)"
+    export GREEN="$(tput setaf 2)"
+    export GREEN_BOLD="$(tput setaf 2; tput bold)"
+    export GREEN_ITALIC="$(tput setaf 2; tput sitm)"
+    export GREEN_BOLD_ITALIC="$(tput setaf 2; tput bold; tput sitm)"
+    export YELLOW="$(tput setaf 3)"
+    export YELLOW_BOLD="$(tput setaf 3; tput bold)"
+    export YELLOW_ITALIC="$(tput setaf 3; tput sitm)"
+    export YELLOW_BOLD_ITALIC="$(tput setaf 3; tput bold; tput sitm)"
+    export BLUE="$(tput setaf 4)"
+    export BLUE_BOLD="$(tput setaf 4; tput bold)"
+    export BLUE_ITALIC="$(tput setaf 4; tput sitm)"
+    export BLUE_BOLD_ITALIC="$(tput setaf 4; tput bold; tput sitm)"
+    export MAGENTA="$(tput setaf 5)"
+    export MAGENTA_BOLD="$(tput setaf 5; tput bold)"
+    export MAGENTA_ITALIC="$(tput setaf 5; tput sitm)"
+    export MAGENTA_BOLD_ITALIC="$(tput setaf 5; tput bold; tput sitm)"
+    export CYAN="$(tput setaf 6)"
+    export CYAN_BOLD="$(tput setaf 6; tput bold)"
+    export CYAN_ITALIC="$(tput setaf 6; tput sitm)"
+    export CYAN_BOLD_ITALIC="$(tput setaf 6; tput bold; tput sitm)"
+    export WHITE="$(tput setaf 7)"
+    export WHITE_BOLD="$(tput setaf 7; tput bold)"
+    export WHITE_ITALIC="$(tput setaf 7; tput sitm)"
+    export WHITE_BOLD_ITALIC="$(tput setaf 7; tput bold; tput sitm)"
+    export RESET="$(tput sgr0)"
+  '';
+}
