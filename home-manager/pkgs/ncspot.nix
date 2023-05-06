@@ -17,7 +17,7 @@
           highlight_bg = "#2e3436";
           error = "#fce94f";
           error_bg = "#a40000";
-          statusbar = "#eeeeec";
+          statusbar = "#729fcf";
           statusbar_progress = "#729fcf";
           statusbar_bg = "#555753";
           cmdline = "#eeeeec";
