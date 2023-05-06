@@ -4,6 +4,7 @@
   imports = [
     ./alacritty.nix
     ./bash.nix
+    ./delta.nix
     ./encryption.nix
     ./fish.nix
     ./git.nix
