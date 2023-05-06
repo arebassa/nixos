@@ -82,4 +82,4 @@ rebuild:
     @sudo nixos-rebuild switch --flake .#\{{`hostname`}}
 # Update Flake & Rebuild nixos cfg on your current host.
 update:
-    nixos-rebuild switch --upgrade --flake .#\{{`hostname`}}
+    @sudo nixos-rebuild switch --upgrade --flake .#\{{`hostname`}}
