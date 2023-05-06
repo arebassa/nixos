@@ -83,3 +83,6 @@ rebuild:
 # Update Flake & Rebuild nixos cfg on your current host.
 update:
     @sudo nixos-rebuild switch --upgrade --flake .#\{{`hostname`}}
+# Garbage collect the current host
+garbage:
+    @sudo nix-collect-garbage -d
