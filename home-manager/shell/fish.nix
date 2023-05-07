@@ -96,13 +96,10 @@ in {
     shellAliases = {
       j = "just --choose";
       reboot-windows = "sudo systemctl reboot --boot-loader-entry=auto-windows";
+      ".." = "cd ..";
       };
     # fish functions
     functions = {
-      do-switch = {
-        description = "Do a rebuild and switch in NIXOS";
-        body = "sudo nixos-rebuild switch";
-      };
       go-nix = {
         description = "Run: cd /etc/nixos";
         body = "cd /etc/nixos";
