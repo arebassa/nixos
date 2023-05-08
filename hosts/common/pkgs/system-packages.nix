@@ -38,6 +38,7 @@
     terraform
     ### Dev
     vscode
+    vscode-extensions.ms-vscode-remote
     gitkraken
     git
     just
