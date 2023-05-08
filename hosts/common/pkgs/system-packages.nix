@@ -17,6 +17,7 @@
     gnome.adwaita-icon-theme
     ### Terminal
     imagemagick_light
+    sshfs
     coreutils
     wget
     xclip
