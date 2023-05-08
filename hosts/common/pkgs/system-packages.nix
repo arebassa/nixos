@@ -38,6 +38,7 @@
     terraform
     ### Dev
     vscode
+    vscode-extensions.ms-vscode-remote.remote-ssh
     gitkraken
     git
     just
@@ -68,11 +69,6 @@
     element-desktop
     slack
     rocketchat-desktop
-  ];
-  services.vscode-extensions.enable = true;
-   # Install the ms-vscode-remote extension
-  services.vscode-extensions.extensions = [
-    "ms-vscode-remote.remote-ssh"
   ];
   # ...
 }
