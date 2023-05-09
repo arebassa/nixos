@@ -281,8 +281,8 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       binding = "<Super>t";
-      command = "/etc/profiles/per-user/dustin/bin/alacritty";
-      name = "Open Alacritty";
+      command = "/etc/profiles/per-user/dustin/bin/kitty";
+      name = "Open Kitty";
     };
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
