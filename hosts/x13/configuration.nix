@@ -8,12 +8,11 @@
   imports = [ # Include the results of the hardware scan.
     ./disks.nix
     ./hardware-configuration.nix
-    ./init.nix
     # ./udev-rules-battery-threshold.nix
 
   ];
 
-
+  networking.hostName = "dustin-krysak"; # Define your hostname.
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;

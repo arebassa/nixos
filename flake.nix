@@ -26,7 +26,7 @@
           system = "x86_64-linux";
           modules = [
             sops-nix.nixosModules.sops
-            ./hosts/x13/configuration.nix
+            ./hosts/x13/default.nix
             nixos-hardware.nixosModules.lenovo-thinkpad-x13-yoga
             home-manager.nixosModules.home-manager
             {
