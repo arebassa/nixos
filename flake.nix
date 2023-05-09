@@ -50,7 +50,7 @@
           system = "x86_64-linux";
           modules = [
             sops-nix.nixosModules.sops
-            ./hosts/tower/configuration.nix
+            ./hosts/tower/default.nix
             home-manager.nixosModules.home-manager
             {
               home-manager.useGlobalPkgs = true;
