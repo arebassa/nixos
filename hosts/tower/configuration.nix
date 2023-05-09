@@ -8,7 +8,6 @@
   imports = [ # Include the results of the hardware scan.
     ./disks.nix
     ./hardware-configuration.nix
-    ./init.nix
     ./amdgpu.nix
   ];
 
