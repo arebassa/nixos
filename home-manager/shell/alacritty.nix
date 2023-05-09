@@ -97,7 +97,7 @@
       key_bindings = [
         {
           key = "V";
-          mods = "|Shift";
+          mods = "sy|Shift";
           action = "Paste";
         }
         {
