@@ -3,7 +3,7 @@
 {
   imports = [
     ./cfg
-    ./desktop
+    ./desktop/gnome
     ./pkgs
   ];
 
