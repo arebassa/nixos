@@ -4,7 +4,7 @@
   imports = [
     ./alacritty.nix
     ./bash.nix
-    ./dir-env.nix
+    ./direnv.nix
     ./encryption.nix
     ./fish.nix
     ./git.nix
