@@ -80,6 +80,9 @@ help:
 # Rebuild nixos cfg on your current host.
 rebuild:
     @sudo nixos-rebuild switch --flake .#\{{`hostname`}}
+# Rebuild nixos cfg on your current host with show-trace.
+rebuild-trace:
+    @sudo nixos-rebuild switch --show-trace --flake .#\{{`hostname`}}
 # Update Flake & Rebuild nixos cfg on your current host.
 update:
     @sudo nixos-rebuild switch --upgrade --flake .#\{{`hostname`}}
