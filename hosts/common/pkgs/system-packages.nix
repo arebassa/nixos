@@ -21,7 +21,8 @@
     bluez
     ### Cloud
     kubectl
-    kubernetes-helm
+    kubernetes-
+    eksctl
     terraform
     ### Dev
     vscode
