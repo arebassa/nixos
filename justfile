@@ -86,3 +86,6 @@ update:
 # Garbage collect the current host
 garbage:
     @sudo nix-collect-garbage -d
+# Run garbage collect, update and rebuild
+all:
+    update garbage
