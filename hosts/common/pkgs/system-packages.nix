@@ -24,6 +24,7 @@
     kubernetes-helm
     eksctl
     awscli2
+    aws-iam-authenticator
     terraform
     ### Dev
     vscode
