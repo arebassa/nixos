@@ -18,6 +18,7 @@ in {
     defaultEditor = true;
     plugins = with pkgs.vimPlugins; [
       vim-nix
+      vim-wayland-clipboard
       vim-surround
       neoformat
       fzf-vim
