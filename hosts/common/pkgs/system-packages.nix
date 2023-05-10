@@ -20,6 +20,7 @@
     ### Bluetooth
     bluez
     ### Cloud
+    vultr-cli
     kubectl
     kubernetes-helm
     eksctl
