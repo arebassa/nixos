@@ -31,7 +31,7 @@
     just
     gnumake
     git-crypt
-    # shadowenv
+    shadowenv
     difftastic
     nixfmt
     doppler

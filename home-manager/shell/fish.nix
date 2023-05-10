@@ -6,7 +6,10 @@ in {
     enable = true;
     shellInit = ''
       # Hook in direnv
-      direnv hook fish | source
+      # direnv hook fish | source
+
+      # Hook in shadowenv
+      shadowenv init fish | source
 
       set -x NIXOS_OZONE_WL 1
       set -x PATH ~/.npm-packages/bin $PATH
@@ -115,7 +118,7 @@ in {
   };
 
   # Enable direnv
-  programs.direnv.enable = true;
+  # programs.direnv.enable = true;
 
   # Starship prompt
   # https://github.com/search?p=1&q=language%3Anix+programs.starship.settings&type=Code
