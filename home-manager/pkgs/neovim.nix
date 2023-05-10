@@ -9,6 +9,18 @@ let
       sha256 = "1lfckdxkd9cl0bagcxwfg0gb84bs2sxxscrwd86yrqyhrvm24hik";
     };
   };
+
+  vim-just = pkgs.vimUtils.buildVimPluginFrom2Nix {
+    name = "vim-just";
+    src = pkgs.fetchFromGitHub {
+      owner = "NoahTheDuke";
+      repo = "vim-just";
+      # git ls-remote https://github.com/NoahTheDuke/vim-just.git HEAD
+      rev = "9fc9a1afaa9e3567b25f4141a01f6172a1992a0b";
+      # sha256 = "1lfckdxkd9cl0bagcxwfg0gb84bs2sxxscrwd86yrqyhrvm24hik";
+    };
+  };
+
 in {
   programs.neovim = {
     enable = true;
@@ -22,6 +34,7 @@ in {
       fzf-vim
       lightline-vim
       shadowenv
+      vim-just
       supertab
       tabular
       vim-commentary
