@@ -1,6 +1,6 @@
 { pkgs, lib, ... }:
 let
-  globalconf = import ../../config;
+  globalconf = import ../../cfg/neovim;
   # shadowenv = pkgs.vimUtils.buildVimPluginFrom2Nix {
   #   name = "shadowenv";
   #   src = pkgs.fetchFromGitHub {
