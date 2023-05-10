@@ -23,6 +23,7 @@
     kubectl
     kubernetes-helm
     eksctl
+    awscli2
     terraform
     ### Dev
     vscode
