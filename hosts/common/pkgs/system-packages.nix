@@ -21,7 +21,7 @@
     bluez
     ### Cloud
     kubectl
-    kubernetes-
+    kubernetes-helm
     eksctl
     terraform
     ### Dev
