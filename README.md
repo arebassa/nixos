@@ -29,6 +29,7 @@ For now I have a few manual steps post install.
 ### opencommit
 
 - potentially depreciated by `gptcommit` in the repos.*
+    - ad-hoc docs: `gptcommit config set allow-amend true`
 
 - `npm i -g opencommit`
 - (may need reboot)
