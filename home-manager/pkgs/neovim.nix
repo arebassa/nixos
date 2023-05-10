@@ -53,16 +53,6 @@ in {
       " Save and exit key mapping for Ctrl-X
       nnoremap <C-X> :wq<CR>
 
-      " Copy to system clipboard
-      nnoremap <C-c> :w !wl-copy<CR>
-
-      " Cut to system clipboard
-      nnoremap <C-x> :w !wl-copy<CR>d<CR>
-
-      " Paste from system clipboard
-      nnoremap <C-p> :r !wl-paste<CR>
-
-
     '';
 
   };
