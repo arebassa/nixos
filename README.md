@@ -28,6 +28,8 @@ For now I have a few manual steps post install.
 
 ### opencommit
 
+- potentially depreciated by `gptcommit` in the repos.*
+
 - `npm i -g opencommit`
 - (may need reboot)
 - `oc config set OPENAI_API_KEY=xxxxxxxxx`
@@ -43,5 +45,5 @@ For now I have a few manual steps post install.
 - [ ] automate install.
     - [ ] Look at disk partitions as code with [disko](https://github.com/nix-community/disko)
         - [ ] time to rethink file systems
-- [ ] start skeleton to add cfg for my tower
-- [ ] build tower cfg...
+- [x] start skeleton to add cfg for my tower
+- [x] build tower cfg...
