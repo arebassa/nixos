@@ -88,4 +88,5 @@ garbage:
     @sudo nix-collect-garbage -d
 # Run garbage collect, update and rebuild
 all:
-    update garbage
+    just update
+    just garbage
