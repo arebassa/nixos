@@ -54,13 +54,13 @@ in {
       nnoremap <C-X> :wq<CR>
 
       " Copy to system clipboard
-      nnoremap <C-c> "+y
+      nnoremap <C-c> :w !wl-copy<CR>
 
       " Cut to system clipboard
-      nnoremap <C-x> "+x
+      nnoremap <C-x> :w !wl-copy<CR>d<CR>
 
       " Paste from system clipboard
-      nnoremap <C-p> "+p
+      nnoremap <C-p> :r !wl-paste<CR>
 
 
     '';
