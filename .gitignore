@@ -5,3 +5,4 @@ repository.config
 git-commit.md
 notes.md
 .envrc
+.shadowenv.d
