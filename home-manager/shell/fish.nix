@@ -102,6 +102,8 @@ in {
     shellAliases = {
       j = "just --choose";
       reboot-windows = "sudo systemctl reboot --boot-loader-entry=auto-windows";
+      nixcfg = "man configuration.nix";
+      hmcfg = "man home-configuration.nix";
       ".." = "cd ..";
       };
     # fish functions
