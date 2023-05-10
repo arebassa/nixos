@@ -16,7 +16,7 @@
     disable_ligatures = "cursor"; # disable ligatures when cursor is on them
 
     # Window layout
-    hide_window_decorations = "titlebar-only";
+    hide_window_decorations = "no";
     window_padding_width = "10";
 
     # Tab bar
@@ -36,28 +36,28 @@
     modify_font underline_position 2
   '';
 
-#   programs.kitty.extras.useSymbolsFromNerdFont = "JetBrainsMono Nerd Font";
+  #   programs.kitty.extras.useSymbolsFromNerdFont = "JetBrainsMono Nerd Font";
   # }}}
 
   # Colors config ------------------------------------------------------------------------------ {{{
 
-    programs.kitty.theme = "Afterglow";
-#   programs.kitty.extras.colors = {
-#     enable = true;
+  programs.kitty.theme = "Afterglow";
+  #   programs.kitty.extras.colors = {
+  #     enable = true;
 
-#     # Background dependent colors
-#     dark = config.colors.solarized-dark.pkgThemes.kitty;
-#     light = config.colors.solarized-light.pkgThemes.kitty;
-#   };
+  #     # Background dependent colors
+  #     dark = config.colors.solarized-dark.pkgThemes.kitty;
+  #     light = config.colors.solarized-light.pkgThemes.kitty;
+  #   };
 
-#   programs.fish.functions.set-term-colors = {
-#     body = "term-background $term_background";
-#     onVariable = "term_background";
-#   };
-#   programs.fish.interactiveShellInit = ''
-#     # Set term colors based on value of `$term_backdround` when shell starts up.
-#     set-term-colors
-#   '';
+  #   programs.fish.functions.set-term-colors = {
+  #     body = "term-background $term_background";
+  #     onVariable = "term_background";
+  #   };
+  #   programs.fish.interactiveShellInit = ''
+  #     # Set term colors based on value of `$term_backdround` when shell starts up.
+  #     set-term-colors
+  #   '';
   # }}}
 }
 # vim: foldmethod=marker

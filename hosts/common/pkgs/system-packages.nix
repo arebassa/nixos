@@ -3,6 +3,7 @@
   environment.systemPackages = with pkgs; [
     ### Terminal
     gptcommit
+    wl-clipboard
     imagemagick_light
     sshfs
     coreutils
