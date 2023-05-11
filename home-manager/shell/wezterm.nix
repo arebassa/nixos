@@ -17,6 +17,8 @@
         tab_bar_at_bottom = true,
         use_fancy_tab_bar = true,
         window_decorations = "TITLE | RESIZE",
+
+
       }
 
 
