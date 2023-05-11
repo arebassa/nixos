@@ -33,21 +33,4 @@
     enableSSHSupport = true;
   };
 
-  # Systemd timer to sync drive
-  systemd.timers."rclone-bisync" = {
-    wantedBy = [ "timers.target" ];
-    timerConfig = {
-      OnBootSec = "10min";
-      OnUnitActiveSec = "1h";
-      Unit = "rclone-bisync.service";
-    };
-  };
-
-  systemd.services."rclone-bisync" = {
-    script = ''
-      exec su - dustin -c '/usr/bin/rclone bisync --drive-skip-dangling-shortcuts --drive-export-formats link.html /home/dustin/Documents/Sysdig/customers sysdig:/_Customers'
-    '';
-    serviceConfig = { Type = "oneshot"; };
-  };
-
 }
