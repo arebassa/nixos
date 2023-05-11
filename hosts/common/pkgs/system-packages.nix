@@ -3,6 +3,7 @@
   environment.systemPackages = with pkgs; [
     ### Terminal
     gptcommit
+    hugo
     wl-clipboard
     imagemagick_light
     sshfs
