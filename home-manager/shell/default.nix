@@ -9,7 +9,7 @@
     ./git.nix
     ./kitty.nix
     ./ssh.nix
-    # ./wezterm.nix
+    ./wezterm.nix
 
   ];
 }
