@@ -1,27 +1,33 @@
 { pkgs, lib, ... }:
 let
   globalconf = import ../../cfg;
-  # shadowenv = pkgs.vimUtils.buildVimPluginFrom2Nix {
-  #   name = "shadowenv";
-  #   src = pkgs.fetchFromGitHub {
-  #     owner = "Arkham";
-  #     repo = "shadowenv.vim";
-  #     rev = "6422c3a651c3788881d01556cb2a90bdff7bf002";
-  #     sha256 = "1lfckdxkd9cl0bagcxwfg0gb84bs2sxxscrwd86yrqyhrvm24hik";
-  #   };
-  # };
+
+  shadowenv-vim = pkgs.vimUtils.buildVimPluginFrom2Nix {
+    name = "shadowenv-vim";
+    src = pkgs.fetchFromGitHub {
+      owner = "Arkham";
+      repo = "shadowenv.vim";
+      rev = "6422c3a651c3788881d01556cb2a90bdff7bf002";
+      sha256 = "1lfckdxkd9cl0bagcxwfg0gb84bs2sxxscrwd86yrqyhrvm24hik";
+    };
+  };
 
   # Allow installing plugins from GitHub. This will be reusable.
-  fromGitHub = rev: ref: repo:
-    pkgs.vimUtils.buildVimPluginFrom2Nix {
-      pname = "${lib.strings.sanitizeDerivationName repo}";
-      version = ref;
-      src = builtins.fetchGit {
-        url = "https://github.com/${repo}.git";
-        ref = ref;
-        rev = rev;
-      };
-    };
+  # fromGitHub = rev: ref: repo:
+  #   pkgs.vimUtils.buildVimPluginFrom2Nix {
+  #     pname = "${lib.strings.sanitizeDerivationName repo}";
+  #     version = ref;
+  #     src = builtins.fetchGit {
+  #       url = "https://github.com/${repo}.git";
+  #       ref = ref;
+  #       rev = rev;
+  #     };
+  #   };
+
+  # github plugins - [UPDATE]
+  # shadowenv-vim =
+  #   (fromGitHub "c306d272b2280b7163b160fc27630eb9c16a3f4a" "master"
+  #     "Shopify/shadowenv-vim");
 
 in {
   programs.neovim = {
@@ -30,15 +36,14 @@ in {
     vimAlias = true;
     defaultEditor = true;
     plugins = with pkgs.vimPlugins; [
-      (fromGitHub "6422c3a651c3788881d01556cb2a90bdff7bf002" "master"
-        "Shopify/shadowenv.vim")
+
       vim-nix
       vim-wayland-clipboard
       vim-surround
       neoformat
       fzf-vim
       lightline-vim
-      # shadowenv
+      shadowenv-vim
       supertab
       tabular
       vim-commentary
