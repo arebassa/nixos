@@ -9,7 +9,8 @@ in {
       # direnv hook fish | source
 
       # Autocomplete for vultr-cli
-      vultr-cli completion fish | source
+      # needs full time ENV_VAR
+      # vultr-cli completion fish | source
 
       # Hook in shadowenv
       shadowenv init fish | source
