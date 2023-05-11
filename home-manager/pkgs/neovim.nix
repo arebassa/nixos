@@ -30,7 +30,7 @@ in {
     vimAlias = true;
     defaultEditor = true;
     plugins = with pkgs.vimPlugins; [
-      (fromGitHub globalconf.shadowenvVimCommit globalconf.shadowenvVimBranch
+      (fromGitHub "6422c3a651c3788881d01556cb2a90bdff7bf002" "master"
         "Shopify/shadowenv.vim")
       vim-nix
       vim-wayland-clipboard
