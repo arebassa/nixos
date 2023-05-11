@@ -109,6 +109,9 @@ in {
       nixcfg = "man configuration.nix";
       hmcfg = "man home-configuration.nix";
       ".." = "cd ..";
+      k = "kubectl";
+      dc = "docker compose";
+      n = "cd ~/dev/nixos";
     };
     # fish functions
     functions = {
