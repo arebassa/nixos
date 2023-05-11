@@ -8,6 +8,9 @@ in {
       # Hook in direnv
       # direnv hook fish | source
 
+      # Autocomplete for vultr-cli
+      vultr-cli completion fish | source
+
       # Hook in shadowenv
       shadowenv init fish | source
 
@@ -105,7 +108,7 @@ in {
       nixcfg = "man configuration.nix";
       hmcfg = "man home-configuration.nix";
       ".." = "cd ..";
-      };
+    };
     # fish functions
     functions = {
       go-nix = {
