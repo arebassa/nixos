@@ -60,6 +60,7 @@
     todoist-electron
     flameshot
     evolution
+    firefox
     # insync-v3 - broken package
     ### Communication
     element-desktop
