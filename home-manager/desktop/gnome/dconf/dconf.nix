@@ -291,6 +291,12 @@ with lib.hm.gvariant;
       name = "Flameshot";
     };
 
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
+      binding = "<Control><Alt>x";
+      command = "/run/current-system/sw/bin/xkill";
+      name = "xkill";
+    };
+
     "org/gnome/settings-daemon/plugins/power" = {
       sleep-inactive-ac-timeout = 5400;
     };
