@@ -3,7 +3,6 @@
   environment.systemPackages = with pkgs; [
     ### Terminal
     gptcommit
-    multipass
     xorg.xkill
     hugo
     wl-clipboard
