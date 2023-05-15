@@ -3,6 +3,7 @@
   environment.systemPackages = with pkgs; [
     ### Terminal
     gptcommit
+    xorg.xkill
     hugo
     wl-clipboard
     imagemagick_light
@@ -24,6 +25,7 @@
     ### Cloud
     vultr-cli
     kubectl
+    kubecolor
     kubernetes-helm
     eksctl
     awscli2
@@ -57,6 +59,7 @@
     google-chrome
     todoist-electron
     flameshot
+    evolution
     # insync-v3 - broken package
     ### Communication
     element-desktop
