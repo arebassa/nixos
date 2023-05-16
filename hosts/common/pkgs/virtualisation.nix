@@ -4,7 +4,7 @@
     # multipass.enable = true;
     libvirtd = {
       enable = true;
-      allowedBridges = true;
+      allowedBridges = "virbr0";
       onBoot = "start";
       onShutdown = "suspend";
     };
