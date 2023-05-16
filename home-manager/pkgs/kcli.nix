@@ -55,12 +55,14 @@
       zerotier_kubelet: false
     local:
       host: 127.0.0.1
+      enabled: true
       pool: default
       protocol: ssh
       type: kvm
       user: root
     srv:
       host: 192.168.168.1
+      enabled: true
       pool: default
       protocol: ssh
       type: kvm
