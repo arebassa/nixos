@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   # kcli cfg for use with libvirt
   home.file.".kcli/config.yml".text = ''
-        default:
+    default:
       autostart: false
       cache: false
       client: local
