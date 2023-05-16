@@ -3,6 +3,7 @@
   environment.systemPackages = with pkgs; [
     ### Terminal
     gptcommit
+    dig
     xorg.xkill
     hugo
     wl-clipboard
