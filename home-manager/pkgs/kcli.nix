@@ -59,6 +59,12 @@
       protocol: ssh
       type: kvm
       user: root
+    srv:
+      host: 192.168.168.1
+      pool: default
+      protocol: ssh
+      type: kvm
+      user: dustin
 
   '';
 }
