@@ -20,7 +20,6 @@
     gnupg
     fzf
     _1password
-    rclone
     ### Bluetooth
     bluez
     ### Cloud
