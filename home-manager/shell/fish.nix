@@ -115,6 +115,8 @@ in {
       kcli =
         "docker run --net host -it --rm -v $HOME/.kube:/root/.kube -v $HOME/.ssh:/root/.ssh -v $HOME/.kcli:/root/.kcli -v /var/lib/libvirt/images:/var/lib/libvirt/images -v /var/run/libvirt:/var/run/libvirt -v $PWD:/workdir quay.io/karmab/kcli";
       rustscan = "docker run -it --rm --name rustscan rustscan/rustscan:latest";
+      kc = "cd ~/.kube && j && cd -";
+
     };
     # fish functions
     functions = {
