@@ -2,7 +2,6 @@
   # ...
   environment.systemPackages = with pkgs; [
     ### Terminal
-    rustscan
     gptcommit
     dig
     xorg.xkill
