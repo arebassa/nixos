@@ -2,6 +2,7 @@
   # ...
   environment.systemPackages = with pkgs; [
     ### Terminal
+    rustscan
     gptcommit
     dig
     xorg.xkill
@@ -61,6 +62,9 @@
     google-chrome
     todoist-electron
     flameshot
+    tuba
+    tootle
+
     # insync-v3 - broken package
     ### Communication
     element-desktop
