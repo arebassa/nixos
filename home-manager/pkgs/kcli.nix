@@ -59,6 +59,7 @@ srv:
   protocol: ssh
   type: kvm
   user: dustin
+  enabled: true
 kvm-local:
   host: localhost
   user: root

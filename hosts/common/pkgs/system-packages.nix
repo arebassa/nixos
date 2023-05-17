@@ -57,6 +57,7 @@
     autorestic
     ### General GUI
     _1password-gui
+    firefox
     google-chrome
     todoist-electron
     flameshot
