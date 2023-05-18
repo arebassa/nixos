@@ -56,6 +56,7 @@
     autorestic
     ### General GUI
     _1password-gui
+    obsidian
     firefox
     google-chrome
     todoist-electron
