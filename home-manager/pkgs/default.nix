@@ -1,7 +1,7 @@
-{ config, pkgs, lib, ... }:
-{
+{ config, pkgs, lib, ... }: {
   imports = [
-    ./kcli.nix
+    # removed due to testing
+    # ./kcli.nix
     ./ncspot.nix
     ./neovim.nix
     ./shell.nix
