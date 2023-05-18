@@ -56,6 +56,7 @@
     autorestic
     ### General GUI
     _1password-gui
+    xmind
     firefox
     google-chrome
     todoist-electron
