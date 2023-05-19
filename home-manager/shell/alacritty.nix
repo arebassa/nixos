@@ -2,11 +2,11 @@
   programs.alacritty = {
     enable = true;
     settings = {
-      
+
       # Enable true color support
       env.TERM = "alacritty";
-      dynamic_title: true;
-      dynamic_padding: true;
+      dynamic_title = true;
+      dynamic_padding = true;
       scrolling = {
         history = 10000;
         multiplier = 3;
