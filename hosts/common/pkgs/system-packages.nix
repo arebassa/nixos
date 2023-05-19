@@ -64,6 +64,7 @@
     flameshot
     tuba
     tootle
+    gnome.gnome-boxes
 
     # insync-v3 - broken package
     ### Communication
