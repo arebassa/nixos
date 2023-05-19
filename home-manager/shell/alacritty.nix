@@ -2,12 +2,28 @@
   programs.alacritty = {
     enable = true;
     settings = {
+      
       # Enable true color support
       env.TERM = "alacritty";
+      dynamic_title: true;
+      dynamic_padding: true;
       scrolling = {
         history = 10000;
         multiplier = 3;
       };
+
+      bell = {
+        animation = "EaseOutQuart";
+        duration = 100;
+        color = "0x404040";
+      };
+
+      cursor = {
+        style = "Block";
+        unfocused_hollow = true;
+        blinking: "Always";
+      };
+
       colors = {
         primary = {
           background = "#2d2d2d";
@@ -68,13 +84,10 @@
         };
       };
       window = {
-        decorations = "none";
-        padding = {
-          x = 12;
-          y = 0;
-        };
+        decorations = "full";
         startup_mode = "Windowed";
       };
+
       font = {
         normal = {
           family = "Fira Code";
@@ -94,6 +107,7 @@
         };
         size = 18;
       };
+
       key_bindings = [
         {
           key = "V";
