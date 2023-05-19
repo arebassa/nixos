@@ -64,6 +64,7 @@
     flameshot
     tuba
     tootle
+    virt-manager
 
     # insync-v3 - broken package
     ### Communication
