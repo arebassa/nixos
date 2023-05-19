@@ -64,7 +64,7 @@
     flameshot
     tuba
     tootle
-    gnome.gnome-boxes
+    virt-manager
 
     # insync-v3 - broken package
     ### Communication
