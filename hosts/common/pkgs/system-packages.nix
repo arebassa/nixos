@@ -3,6 +3,7 @@
   environment.systemPackages = with pkgs; [
     ### Terminal
     gptcommit
+    pandoc
     dig
     xorg.xkill
     hugo
