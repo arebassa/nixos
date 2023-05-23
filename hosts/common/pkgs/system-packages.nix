@@ -33,6 +33,7 @@
     aws-iam-authenticator
     terraform
     ### Dev
+    postman
     vscode
     vscode-extensions.ms-vscode-remote.remote-ssh
     gitkraken
