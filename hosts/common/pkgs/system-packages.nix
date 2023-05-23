@@ -24,6 +24,7 @@
     ### Bluetooth
     bluez
     ### Cloud
+    wireshark
     vultr-cli
     kubectl
     kubecolor
