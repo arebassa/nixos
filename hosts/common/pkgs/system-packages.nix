@@ -2,6 +2,7 @@
   # ...
   environment.systemPackages = with pkgs; [
     ### Terminal
+    inetutils
     gptcommit
     pandoc
     dig
