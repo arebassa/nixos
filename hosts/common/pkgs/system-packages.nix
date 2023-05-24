@@ -27,6 +27,7 @@
     wireshark
     vultr-cli
     kubectl
+    kubectx
     kubecolor
     kubernetes-helm
     eksctl
