@@ -2,6 +2,7 @@
   # ...
   environment.systemPackages = with pkgs; [
     ### Terminal
+    blackbox-terminal
     inetutils
     gptcommit
     pandoc
