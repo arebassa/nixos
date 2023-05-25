@@ -13,7 +13,7 @@
   programs.keychain = {
     enable = true;
     enableFishIntegration = true;
-    agents = [ "pkcs11" "secrets" "ssh" ];
+    agents = [ "ssh" ];
     keys = [ "id_rsa" ];
   };
 
