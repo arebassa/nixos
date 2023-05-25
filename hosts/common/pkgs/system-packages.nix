@@ -2,6 +2,7 @@
   # ...
   environment.systemPackages = with pkgs; [
     ### Terminal
+    lftp
     blackbox-terminal
     inetutils
     gptcommit
