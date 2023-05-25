@@ -15,6 +15,11 @@ in {
       # Hook in shadowenv
       shadowenv init fish | source
 
+      # fix ctrl-arrow in fish
+      # https://superuser.com/questions/409594/fish-control-left-control-right-keybindings
+      bind \e\[1\;5C forward-word
+      bind \e\[1\;5D backward-word
+
       set -x NIXOS_OZONE_WL 1
       set -x PATH ~/.npm-packages/bin $PATH
       set -x NODE_PATH ~/.npm-packages/lib/node_modules
@@ -115,7 +120,9 @@ in {
       kcli =
         "docker run --net host -it --rm -v $HOME/.kube:/root/.kube -v $HOME/.ssh:/root/.ssh -v $HOME/.kcli:/root/.kcli -v /var/lib/libvirt/images:/var/lib/libvirt/images -v /var/run/libvirt:/var/run/libvirt -v $PWD:/workdir quay.io/karmab/kcli";
       rustscan = "docker run -it --rm --name rustscan rustscan/rustscan:latest";
-      kc = "cd ~/.kube && j && cd -";
+      kcfg = "cd ~/.kube && j && cd -";
+      kns = "kubens";
+      kc = "kubectx";
 
     };
     # fish functions
@@ -127,6 +134,11 @@ in {
       gcb = {
         description = "Copy git commit bug template";
         body = "echo 'fix: :bug: ' | xclip -selection clipboard";
+      };
+      build-kubeconfig = {
+        description = "Merge all kubeconfig files in ~/.kube/clusters";
+        body = "set kubeconfig_dir /home/dustin/.kube/clusters; for kubeconfig_file in $kubeconfig_dir/*; set -x KUBECONFIG $KUBECONFIG $kubeconfig_file; end
+";
       };
     };
   };

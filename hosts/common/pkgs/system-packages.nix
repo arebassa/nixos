@@ -2,6 +2,9 @@
   # ...
   environment.systemPackages = with pkgs; [
     ### Terminal
+    lftp
+    blackbox-terminal
+    inetutils
     gptcommit
     pandoc
     dig
@@ -24,8 +27,10 @@
     ### Bluetooth
     bluez
     ### Cloud
+    wireshark
     vultr-cli
     kubectl
+    kubectx
     kubecolor
     kubernetes-helm
     eksctl
@@ -33,6 +38,7 @@
     aws-iam-authenticator
     terraform
     ### Dev
+    postman
     vscode
     vscode-extensions.ms-vscode-remote.remote-ssh
     gitkraken
