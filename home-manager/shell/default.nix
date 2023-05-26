@@ -2,14 +2,14 @@
 
 {
   imports = [
-    ./alacritty.nix
+    #./alacritty.nix
     ./bash.nix
     ./encryption.nix
     ./fish.nix
     ./git.nix
-    ./kitty.nix
+    #./kitty.nix
     ./ssh.nix
-    ./wezterm.nix
+    #./wezterm.nix
 
   ];
 }
