@@ -40,10 +40,9 @@ with lib.hm.gvariant;
       headerbar-drag-area = false;
       headerbar-draw-line-single-tab = false;
       show-headerbar = true;
-      terminal-padding = mkTuple [ mkUint32 24 mkUint32 24 ];
       theme-dark = "base16: Twilight (dark)";
-      window-height = mkUint32 1376;
-      window-width = mkUint32 1696;
+      window-height = mkUint32 560;
+      window-width = mkUint32 936;
     };
 
     "org/blueman/general" = {
@@ -558,7 +557,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/world-clocks" = {
-      locations = "[<(uint32 2, <('Calgary', 'CYYC', true, [(0.89215414179553232, -1.9899662412999655)], [(0.89157235374267252, -1.9911297824991001)])>)>, <(uint32 2, <('Saskatoon', 'CYXE', true, [(0.91048009894147275, -1.8619754178515198)], [(0.90989831088861295, -1.8616845412783825)])>)>, <(uint32 2, <('Toronto', 'CYTZ', true, [(0.76154532446909495, -1.3857914260834978)], [(0.76212711252195475, -1.3860823201099277)])>)>, <(uint32 2, <('Melbourne', 'YMML', true, [(-0.65740735740229495, 2.5278185274873568)], [(-0.6600253512802865, 2.5301456447922108)])>)>]";
+      locations = "@av []";
     };
 
     "org/gnome/software" = {
