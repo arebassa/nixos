@@ -21,7 +21,7 @@ This is a simple nixos setup leveraging flakes, and home-manager with the gnome 
 
 - install nixos from the ISO with the Gnome Desktop
 - clone the repository with `mkdir -p ~/dev/ && cd ~/dev/ && git clone git@github.com:bashfulrobot/nixos && cd ~/dev/nixos`
-- Run `sudo nixos-rebuild switch --flake .#`
+- Run `sudo nixos-rebuild switch --flake .#[HOSTNAME]`
 
 ## Manual Steps
 
