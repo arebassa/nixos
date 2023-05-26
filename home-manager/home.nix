@@ -13,8 +13,16 @@
     source = ../home/.face;
   };
   # Packages and settings installed to the user profile.
-  imports =
-    [ ./shell ./fonts ./pkgs ./srvcs ./desktop/gnome/dconf ./development ./autostart ];
+  imports = [
+    ./shell
+    ./shells
+    ./fonts
+    ./pkgs
+    ./srvcs
+    ./desktop/gnome/dconf
+    ./development
+    ./autostart
+  ];
   fonts.fontconfig.enable = true;
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage

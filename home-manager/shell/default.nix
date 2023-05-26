@@ -3,9 +3,8 @@
 {
   imports = [
     #./alacritty.nix
-    ./bash.nix
+    # ./bash.nix
     ./encryption.nix
-    ./fish.nix
     ./git.nix
     #./kitty.nix
     ./ssh.nix
