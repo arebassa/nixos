@@ -63,6 +63,7 @@
     autorestic
     ### General GUI
     _1password-gui
+    bookworm
     obsidian
     firefox
     google-chrome
