@@ -13,7 +13,6 @@
     gnomeExtensions.caffeine
     # gnomeExtensions.user-themes
     gnomeExtensions.appindicator
-    gnome.dconf-editor
     gnome.adwaita-icon-theme
   ];
   # ...

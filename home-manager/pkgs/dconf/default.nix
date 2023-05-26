@@ -2,5 +2,4 @@
 
 {
   imports = [ ./dconf.nix ];
-
 }
