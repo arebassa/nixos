@@ -5,8 +5,16 @@
   users.users.dustin = {
     isNormalUser = true;
     description = "Dustin Krysak";
-    extraGroups =
-      [ "networkmanager" "wheel" "docker" "onepassword" "onepassword-cli" "qemu" "libvirt"];
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "docker"
+      "onepassword"
+      "onepassword-cli"
+      "qemu"
+      "libvirt"
+      "kvm"
+    ];
     shell = "/etc/profiles/per-user/dustin/bin/fish";
   };
 }
