@@ -3,6 +3,7 @@
   environment.systemPackages = with pkgs; [
     ### Terminal
     lftp
+    neofetch
     blackbox-terminal
     inetutils
     gptcommit
