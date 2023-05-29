@@ -3,6 +3,7 @@
   environment.systemPackages = with pkgs; [
     ### Terminal
     lftp
+    cdrtools # mkisofs needed for cloud init
     neofetch
     blackbox-terminal
     inetutils
