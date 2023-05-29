@@ -29,6 +29,7 @@
     bluez
     ### Cloud
     wireshark
+    vagrant
     vultr-cli
     kubectl
     kubectx
