@@ -44,7 +44,6 @@
     gitui
     postman
     vscode
-    vscode-extensions.ms-vscode-remote.remote-ssh
     gitkraken
     git
     just
