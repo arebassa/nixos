@@ -41,6 +41,7 @@
     aws-iam-authenticator
     terraform
     ### Dev
+    gitui
     postman
     vscode
     vscode-extensions.ms-vscode-remote.remote-ssh
