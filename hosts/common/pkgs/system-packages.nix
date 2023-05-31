@@ -41,6 +41,7 @@
     aws-iam-authenticator
     terraform
     ### Dev
+    sublime4
     lapce # Editor
     gitui # Terminal GIT Client
     postman # API Testing
