@@ -53,6 +53,7 @@ in {
       vim-rhubarb
       vim-visualstar
       vim-unimpaired
+      vim-go
     ];
     extraConfig = ''
       " Add the following augroup to run Neoformat on BufWritePre:
