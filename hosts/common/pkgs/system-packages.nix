@@ -41,19 +41,20 @@
     aws-iam-authenticator
     terraform
     ### Dev
-    gitui
-    postman
-    vscode
-    gitkraken
-    git
-    just
+    lapce # Editor
+    gitui # Terminal GIT Client
+    postman # API Testing
+    vscode # Primary Editor
+    gitkraken # Git GUI
+    git # Version Control
+    just # Task Runner
     gnumake
-    git-crypt
+    git-crypt # Git Encryptiom
     shadowenv
-    difftastic
-    nixfmt
-    doppler
-    gh
+    difftastic # Terminal Diff
+    nixfmt # Format Nix Code
+    doppler # Secrets Encryption
+    gh # GitHub Terminal Client
     nodejs-19_x
     ### Networking
     tailscale
