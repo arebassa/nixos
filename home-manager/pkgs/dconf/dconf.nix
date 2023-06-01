@@ -6,7 +6,8 @@ with lib.hm.gvariant;
 {
   dconf.settings = {
     "apps/seahorse/listing" = {
-      keyrings-selected = [ "secret-service:///org/freedesktop/secrets/collection/login" ];
+      keyrings-selected =
+        [ "secret-service:///org/freedesktop/secrets/collection/login" ];
     };
 
     "apps/seahorse/windows/key-manager" = {
@@ -15,7 +16,8 @@ with lib.hm.gvariant;
     };
 
     "ca/desrt/dconf-editor" = {
-      saved-pathbar-path = "/org/gnome/evolution-data-server/calendar/reminders-past";
+      saved-pathbar-path =
+        "/org/gnome/evolution-data-server/calendar/reminders-past";
       saved-view = "/org/gnome/evolution-data-server/";
       window-height = 1329;
       window-is-maximized = false;
@@ -45,25 +47,18 @@ with lib.hm.gvariant;
       window-width = mkUint32 936;
     };
 
-    "org/blueman/general" = {
-      window-properties = [ 730 528 0 0 ];
-    };
+    "org/blueman/general" = { window-properties = [ 730 528 0 0 ]; };
 
-    "org/blueman/plugins/powermanager" = {
-      auto-power-on = "@mb true";
-    };
+    "org/blueman/plugins/powermanager" = { auto-power-on = "@mb true"; };
 
     "org/blueman/plugins/recentconns" = {
-      recent-connections = "[{'adapter': 'F4:26:79:CE:03:AF', 'address': '65:82:86:A8:4D:2F', 'alias': '65-82-86-A8-4D-2F', 'icon': 'blueman', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1679417917.6529262'}, {'adapter': 'F4:26:79:CE:03:AF', 'address': 'D0:14:85:5E:27:AB', 'alias': 'D0-14-85-5E-27-AB', 'icon': 'blueman', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1679417986.546906'}, {'adapter': 'F4:26:79:CE:03:AF', 'address': '57:F5:31:50:25:61', 'alias': '57-F5-31-50-25-61', 'icon': 'blueman', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1679418691.4191337'}, {'adapter': 'F4:26:79:CE:03:AF', 'address': '62:79:C2:94:D2:2A', 'alias': '62-79-C2-94-D2-2A', 'icon': 'blueman', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1679418734.680901'}]";
+      recent-connections =
+        "[{'adapter': 'F4:26:79:CE:03:AF', 'address': '65:82:86:A8:4D:2F', 'alias': '65-82-86-A8-4D-2F', 'icon': 'blueman', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1679417917.6529262'}, {'adapter': 'F4:26:79:CE:03:AF', 'address': 'D0:14:85:5E:27:AB', 'alias': 'D0-14-85-5E-27-AB', 'icon': 'blueman', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1679417986.546906'}, {'adapter': 'F4:26:79:CE:03:AF', 'address': '57:F5:31:50:25:61', 'alias': '57-F5-31-50-25-61', 'icon': 'blueman', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1679418691.4191337'}, {'adapter': 'F4:26:79:CE:03:AF', 'address': '62:79:C2:94:D2:2A', 'alias': '62-79-C2-94-D2-2A', 'icon': 'blueman', 'name': 'Audio and input profiles', 'uuid': '00000000-0000-0000-0000-000000000000', 'time': '1679418734.680901'}]";
     };
 
-    "org/gnome/Connections" = {
-      first-run = false;
-    };
+    "org/gnome/Connections" = { first-run = false; };
 
-    "org/gnome/Console" = {
-      last-window-size = mkTuple [ 652 457 ];
-    };
+    "org/gnome/Console" = { last-window-size = mkTuple [ 652 457 ]; };
 
     "org/gnome/Fractal" = {
       main-window-state-height = 640;
@@ -89,7 +84,8 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/Weather" = {
-      locations = "[<(uint32 2, <('Vancouver', 'CYVR', true, [(0.85841109795478021, -2.1496638678574467)], [(0.85957465660720722, -2.1490820798045869)])>)>]";
+      locations =
+        "[<(uint32 2, <('Vancouver', 'CYVR', true, [(0.85841109795478021, -2.1496638678574467)], [(0.85957465660720722, -2.1490820798045869)])>)>]";
     };
 
     "org/gnome/boxes" = {
@@ -122,7 +118,8 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/clocks" = {
-      world-clocks = "[{'location': <(uint32 2, <('Calgary', 'CYYC', true, [(0.89215414179553232, -1.9899662412999655)], [(0.89157235374267252, -1.9911297824991001)])>)>}, {'location': <(uint32 2, <('Saskatoon', 'CYXE', true, [(0.91048009894147275, -1.8619754178515198)], [(0.90989831088861295, -1.8616845412783825)])>)>}, {'location': <(uint32 2, <('Toronto', 'CYTZ', true, [(0.76154532446909495, -1.3857914260834978)], [(0.76212711252195475, -1.3860823201099277)])>)>}, {'location': <(uint32 2, <('Melbourne', 'YMML', true, [(-0.65740735740229495, 2.5278185274873568)], [(-0.6600253512802865, 2.5301456447922108)])>)>}]";
+      world-clocks =
+        "[{'location': <(uint32 2, <('Calgary', 'CYYC', true, [(0.89215414179553232, -1.9899662412999655)], [(0.89157235374267252, -1.9911297824991001)])>)>}, {'location': <(uint32 2, <('Saskatoon', 'CYXE', true, [(0.91048009894147275, -1.8619754178515198)], [(0.90989831088861295, -1.8616845412783825)])>)>}, {'location': <(uint32 2, <('Toronto', 'CYTZ', true, [(0.76154532446909495, -1.3857914260834978)], [(0.76212711252195475, -1.3860823201099277)])>)>}, {'location': <(uint32 2, <('Melbourne', 'YMML', true, [(-0.65740735740229495, 2.5278185274873568)], [(-0.6600253512802865, 2.5301456447922108)])>)>}]";
     };
 
     "org/gnome/clocks/state/window" = {
@@ -141,7 +138,24 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/app-folders/folders/Utilities" = {
-      apps = [ "gnome-abrt.desktop" "gnome-system-log.desktop" "nm-connection-editor.desktop" "org.gnome.baobab.desktop" "org.gnome.Connections.desktop" "org.gnome.DejaDup.desktop" "org.gnome.Dictionary.desktop" "org.gnome.DiskUtility.desktop" "org.gnome.eog.desktop" "org.gnome.Evince.desktop" "org.gnome.FileRoller.desktop" "org.gnome.fonts.desktop" "org.gnome.seahorse.Application.desktop" "org.gnome.tweaks.desktop" "org.gnome.Usage.desktop" "vinagre.desktop" ];
+      apps = [
+        "gnome-abrt.desktop"
+        "gnome-system-log.desktop"
+        "nm-connection-editor.desktop"
+        "org.gnome.baobab.desktop"
+        "org.gnome.Connections.desktop"
+        "org.gnome.DejaDup.desktop"
+        "org.gnome.Dictionary.desktop"
+        "org.gnome.DiskUtility.desktop"
+        "org.gnome.eog.desktop"
+        "org.gnome.Evince.desktop"
+        "org.gnome.FileRoller.desktop"
+        "org.gnome.fonts.desktop"
+        "org.gnome.seahorse.Application.desktop"
+        "org.gnome.tweaks.desktop"
+        "org.gnome.Usage.desktop"
+        "vinagre.desktop"
+      ];
       categories = [ "X-GNOME-Utilities" ];
       name = "X-GNOME-Utilities.directory";
       translate = true;
@@ -156,8 +170,10 @@ with lib.hm.gvariant;
     "org/gnome/desktop/background" = {
       color-shading-type = "solid";
       picture-options = "zoom";
-      picture-uri = "file:///run/current-system/sw/share/backgrounds/gnome/pixels-l.webp";
-      picture-uri-dark = "file:///run/current-system/sw/share/backgrounds/gnome/pixels-d.webp";
+      picture-uri =
+        "file:///run/current-system/sw/share/backgrounds/gnome/pixels-l.webp";
+      picture-uri-dark =
+        "file:///run/current-system/sw/share/backgrounds/gnome/pixels-d.webp";
       primary-color = "#967864";
       secondary-color = "#000000";
     };
@@ -179,24 +195,39 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/notifications" = {
-      application-children = [ "gnome-network-panel" "gnome-power-panel" "org-gnome-epiphany" "org-gnome-console" "firefox" "code" "google-chrome" "org-gnome-settings" "slack" "zoom" "element-desktop" ];
+      application-children = [
+        "gnome-network-panel"
+        "gnome-power-panel"
+        "org-gnome-epiphany"
+        "org-gnome-console"
+        "firefox"
+        "code"
+        "google-chrome"
+        "org-gnome-settings"
+        "slack"
+        "zoom"
+        "element-desktop"
+      ];
     };
 
     "org/gnome/desktop/notifications/application/1password" = {
       application-id = "1password.desktop";
     };
 
-    "org/gnome/desktop/notifications/application/chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-default" = {
-      application-id = "chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop";
-    };
+    "org/gnome/desktop/notifications/application/chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-default" =
+      {
+        application-id =
+          "chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop";
+      };
 
     "org/gnome/desktop/notifications/application/code" = {
       application-id = "code.desktop";
     };
 
-    "org/gnome/desktop/notifications/application/com-github-bleakgrey-tootle" = {
-      application-id = "com.github.bleakgrey.tootle.desktop";
-    };
+    "org/gnome/desktop/notifications/application/com-github-bleakgrey-tootle" =
+      {
+        application-id = "com.github.bleakgrey.tootle.desktop";
+      };
 
     "org/gnome/desktop/notifications/application/dev-geopjr-tuba" = {
       application-id = "dev.geopjr.Tuba.desktop";
@@ -242,9 +273,10 @@ with lib.hm.gvariant;
       application-id = "org.gnome.Epiphany.desktop";
     };
 
-    "org/gnome/desktop/notifications/application/org-gnome-evolution-alarm-notify" = {
-      application-id = "org.gnome.Evolution-alarm-notify.desktop";
-    };
+    "org/gnome/desktop/notifications/application/org-gnome-evolution-alarm-notify" =
+      {
+        application-id = "org.gnome.Evolution-alarm-notify.desktop";
+      };
 
     "org/gnome/desktop/notifications/application/org-gnome-geary" = {
       application-id = "org.gnome.Geary.desktop";
@@ -282,9 +314,7 @@ with lib.hm.gvariant;
       application-id = "Zoom.desktop";
     };
 
-    "org/gnome/desktop/peripherals/keyboard" = {
-      numlock-state = true;
-    };
+    "org/gnome/desktop/peripherals/keyboard" = { numlock-state = true; };
 
     "org/gnome/desktop/peripherals/touchpad" = {
       natural-scroll = false;
@@ -302,18 +332,21 @@ with lib.hm.gvariant;
     "org/gnome/desktop/screensaver" = {
       color-shading-type = "solid";
       picture-options = "zoom";
-      picture-uri = "file:///run/current-system/sw/share/backgrounds/gnome/pixels-l.webp";
+      picture-uri =
+        "file:///run/current-system/sw/share/backgrounds/gnome/pixels-l.webp";
       primary-color = "#967864";
       secondary-color = "#000000";
     };
 
     "org/gnome/desktop/search-providers" = {
-      sort-order = [ "org.gnome.Contacts.desktop" "org.gnome.Documents.desktop" "org.gnome.Nautilus.desktop" ];
+      sort-order = [
+        "org.gnome.Contacts.desktop"
+        "org.gnome.Documents.desktop"
+        "org.gnome.Nautilus.desktop"
+      ];
     };
 
-    "org/gnome/desktop/session" = {
-      idle-delay = mkUint32 300;
-    };
+    "org/gnome/desktop/session" = { idle-delay = mkUint32 300; };
 
     "org/gnome/desktop/sound" = {
       allow-volume-above-100-percent = true;
@@ -331,26 +364,18 @@ with lib.hm.gvariant;
       titlebar-font = "Fira Sans Semi-Bold 10";
     };
 
-    "org/gnome/eog/ui" = {
-      sidebar = false;
-    };
+    "org/gnome/eog/ui" = { sidebar = false; };
 
-    "org/gnome/epiphany" = {
-      ask-for-default = false;
-    };
+    "org/gnome/epiphany" = { ask-for-default = false; };
 
     "org/gnome/epiphany/state" = {
       is-maximized = false;
       window-size = mkTuple [ 936 560 ];
     };
 
-    "org/gnome/evolution-data-server" = {
-      migrated = true;
-    };
+    "org/gnome/evolution-data-server" = { migrated = true; };
 
-    "org/gnome/evolution" = {
-      version = "3.48.1";
-    };
+    "org/gnome/evolution" = { version = "3.48.1"; };
 
     "org/gnome/evolution/calendar" = {
       week-start-day-name = "monday";
@@ -412,9 +437,7 @@ with lib.hm.gvariant;
       workspaces-only-on-primary = true;
     };
 
-    "org/gnome/nautilus/list-view" = {
-      use-tree-view = true;
-    };
+    "org/gnome/nautilus/list-view" = { use-tree-view = true; };
 
     "org/gnome/nautilus/preferences" = {
       default-folder-viewer = "icon-view";
@@ -432,32 +455,36 @@ with lib.hm.gvariant;
       last-folder-path = "/home/dustin/dev/nixos";
     };
 
-    "org/gnome/settings-daemon/plugins/color" = {
-      night-light-enabled = true;
-    };
+    "org/gnome/settings-daemon/plugins/color" = { night-light-enabled = true; };
 
     "org/gnome/settings-daemon/plugins/media-keys" = {
-      custom-keybindings = [ "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/" "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/" ];
+      custom-keybindings = [
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/"
+      ];
       screensaver = [ "<Super>l" ];
     };
 
-    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
-      binding = "<Super>t";
-      command = "/run/current-system/sw/bin/blackbox";
-      name = "Open Blackbox";
-    };
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" =
+      {
+        binding = "<Super>t";
+        command = "/run/current-system/sw/bin/blackbox";
+        name = "Open Blackbox";
+      };
 
-    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
-      binding = "Print";
-      command = "/etc/profiles/per-user/dustin/bin/flameshot gui";
-      name = "Flameshot";
-    };
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" =
+      {
+        binding = "Print";
+        command = "/etc/profiles/per-user/dustin/bin/flameshot gui";
+        name = "Flameshot";
+      };
 
-    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
-      binding = "<Control><Alt>x";
-      command = "/run/current-system/sw/bin/xkill";
-      name = "xkill";
-    };
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" =
+      {
+        binding = "<Control><Alt>x";
+        command = "/run/current-system/sw/bin/xkill";
+        name = "xkill";
+      };
 
     "org/gnome/settings-daemon/plugins/power" = {
       sleep-inactive-ac-timeout = 5400;
@@ -465,8 +492,24 @@ with lib.hm.gvariant;
 
     "org/gnome/shell" = {
       disable-user-extensions = false;
-      disabled-extensions = [ "space-bar@luchrioh" "thinkpad-battery-threshold@marcosdalvarez.org" ];
-      enabled-extensions = [ "caffeine@patapon.info" "grand-theft-focus@zalckos.github.com" "gTile@vibou" "rounded-window-corners@yilozt" "pop-shell@system76.com" "hidetopbar@mathieu.bidon.ca" "gtktitlebar@velitasali.github.io" "trayIconsReloaded@selfmade.pl" "appindicatorsupport@rgcjonas.gmail.com" "auto-move-windows@gnome-shell-extensions.gcampax.github.com" "user-theme@gnome-shell-extensions.gcampax.github.com" "quick-settings-audio-panel@rayzeq.github.io" ];
+      disabled-extensions = [
+        "space-bar@luchrioh"
+        "thinkpad-battery-threshold@marcosdalvarez.org"
+        "auto-move-windows@gnome-shell-extensions.gcampax.github.com"
+      ];
+      enabled-extensions = [
+        "caffeine@patapon.info"
+        "grand-theft-focus@zalckos.github.com"
+        "gTile@vibou"
+        "rounded-window-corners@yilozt"
+        "pop-shell@system76.com"
+        "hidetopbar@mathieu.bidon.ca"
+        "gtktitlebar@velitasali.github.io"
+        "trayIconsReloaded@selfmade.pl"
+        "appindicatorsupport@rgcjonas.gmail.com"
+        "user-theme@gnome-shell-extensions.gcampax.github.com"
+        "quick-settings-audio-panel@rayzeq.github.io"
+      ];
       last-selected-power-profile = "power-saver";
       welcome-dialog-last-shown-version = "43.2";
     };
@@ -476,12 +519,17 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/auto-move-windows" = {
-      application-list = [ "1password.desktop:5" "slack.desktop:2" "rocketchat-desktop.desktop:3" "chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop:3" "code.desktop:4" "todoist-electron.desktop:2" ];
+      application-list = [
+        "1password.desktop:5"
+        "slack.desktop:2"
+        "rocketchat-desktop.desktop:3"
+        "chrome-cifhbcnohmdccbgoicgdjpfamggdegmo-Default.desktop:3"
+        "code.desktop:4"
+        "todoist-electron.desktop:2"
+      ];
     };
 
-    "org/gnome/shell/extensions/caffeine" = {
-      indicator-position-max = 3;
-    };
+    "org/gnome/shell/extensions/caffeine" = { indicator-position-max = 3; };
 
     "org/gnome/shell/extensions/gtile" = {
       auto-close-keyboard-shortcut = true;
@@ -524,7 +572,8 @@ with lib.hm.gvariant;
     "org/gnome/shell/extensions/rounded-window-corners" = {
       custom-rounded-corner-settings = "@a{sv} {}";
       enable-preferences-entry = true;
-      global-rounded-corner-settings = "{'padding': <{'left': <uint32 9>, 'right': <uint32 2>, 'top': <uint32 2>, 'bottom': <uint32 2>}>, 'keep_rounded_corners': <{'maximized': <false>, 'fullscreen': <false>}>, 'border_radius': <uint32 16>, 'smoothing': <uint32 0>, 'enabled': <true>}";
+      global-rounded-corner-settings =
+        "{'padding': <{'left': <uint32 9>, 'right': <uint32 2>, 'top': <uint32 2>, 'bottom': <uint32 2>}>, 'keep_rounded_corners': <{'maximized': <false>, 'fullscreen': <false>}>, 'border_radius': <uint32 16>, 'smoothing': <uint32 0>, 'enabled': <true>}";
       settings-version = mkUint32 5;
       skip-libadwaita-app = false;
     };
@@ -539,26 +588,23 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/shell/extensions/trayIconsReloaded" = {
-      applications = "[{\"id\":\"1password.desktop\"}]";
+      applications = ''[{"id":"1password.desktop"}]'';
     };
 
-    "org/gnome/shell/extensions/user-theme" = {
-      name = "";
-    };
+    "org/gnome/shell/extensions/user-theme" = { name = ""; };
 
     "org/gnome/shell/keybindings" = {
       show-screenshot-ui = [ "<Shift><Control><Alt>p" ];
-      toggle-message-tray = [];
+      toggle-message-tray = [ ];
     };
 
     "org/gnome/shell/weather" = {
       automatic-location = true;
-      locations = "[<(uint32 2, <('Vancouver', 'CYVR', true, [(0.85841109795478021, -2.1496638678574467)], [(0.85957465660720722, -2.1490820798045869)])>)>]";
+      locations =
+        "[<(uint32 2, <('Vancouver', 'CYVR', true, [(0.85841109795478021, -2.1496638678574467)], [(0.85957465660720722, -2.1490820798045869)])>)>]";
     };
 
-    "org/gnome/shell/world-clocks" = {
-      locations = "@av []";
-    };
+    "org/gnome/shell/world-clocks" = { locations = "@av []"; };
 
     "org/gnome/software" = {
       check-timestamp = mkInt64 1684971684;
@@ -566,9 +612,7 @@ with lib.hm.gvariant;
       flatpak-purge-timestamp = mkInt64 1684978821;
     };
 
-    "org/gnome/tweaks" = {
-      show-extensions-notice = false;
-    };
+    "org/gnome/tweaks" = { show-extensions-notice = false; };
 
     "org/gtk/gtk4/settings/file-chooser" = {
       date-format = "regular";
@@ -612,20 +656,22 @@ with lib.hm.gvariant;
     };
 
     "org/virt-manager/virt-manager/connections" = {
-      autoconnect = [ "qemu+ssh://dustin@192.168.168.1/system" "qemu:///system" ];
+      autoconnect =
+        [ "qemu+ssh://dustin@192.168.168.1/system" "qemu:///system" ];
       uris = [ "qemu:///system" "qemu+ssh://dustin@192.168.168.1/system" ];
     };
 
-    "org/virt-manager/virt-manager/details" = {
-      show-toolbar = true;
-    };
+    "org/virt-manager/virt-manager/details" = { show-toolbar = true; };
 
     "org/virt-manager/virt-manager/paths" = {
       media-default = "/home/dustin/Downloads";
     };
 
     "org/virt-manager/virt-manager/urls" = {
-      isos = [ "/var/lib/libvirt/images/nixos-gnome-22.11.2568.c43f676c938-x86_64-linux.iso" "/home/dustin/Downloads/nixos-gnome-22.11.4256.628d4bb6e9f-x86_64-linux.iso" ];
+      isos = [
+        "/var/lib/libvirt/images/nixos-gnome-22.11.2568.c43f676c938-x86_64-linux.iso"
+        "/home/dustin/Downloads/nixos-gnome-22.11.4256.628d4bb6e9f-x86_64-linux.iso"
+      ];
     };
 
     "org/virt-manager/virt-manager/vmlist-fields" = {
@@ -677,9 +723,7 @@ with lib.hm.gvariant;
       vm-window-size = mkTuple [ 1228 658 ];
     };
 
-    "system/proxy" = {
-      mode = "none";
-    };
+    "system/proxy" = { mode = "none"; };
 
   };
 }
